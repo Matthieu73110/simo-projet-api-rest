@@ -1,0 +1,231 @@
+openapi: 3.0.2
+servers:
+  - url: http://localhost:8080
+info:
+  title: "Sample Games Catalogue Web API"
+  version: 1.0.0
+  description: This is a Web API for Catalogue of games.
+  contact:
+    email: login@univ-grenoble-alpes.fr
+    name: <Prénom Nom>
+paths:
+  /platforms:
+    get:
+      tags: [platform]
+      summary: "List all supported platforms"
+      parameters:
+        - name: page
+          schema:
+            type: string
+          in: query
+          description: page of results to return
+          required: false
+      responses:
+        200:
+          description: "Successful operation"
+    post:
+        tags: [platform]
+        summary: "Create a new platform"
+        parameters:
+          - name: myPlatform
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+            in: body
+        responses:
+          200:
+            description: A new platform has been created
+          400:
+              description: The platform already exist
+  /platforms/{name}:
+    get:
+      tags: [platform]
+      summary: "Get one supported platform"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a platform if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+  /genders:
+    get:
+      tags: [gender]
+      summary: "List all genders"
+      parameters:
+        - name: page
+          schema:
+            type: string
+          in: query
+          description: page of results to return
+          required: false
+      responses:
+        200:
+          description: "Successful operation"
+    post:
+        tags: [gender]
+        summary: "Create a new gender"
+        parameters:
+          - name: myGender
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+            in: body
+        responses:
+          200:
+            description: A new gender has been created
+          400:
+              description: The gender already exist
+  /genders/{name}:
+    get:
+      tags: [gender]
+      summary: "Get one gender"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a gender if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+  /editors:
+    get:
+      tags: [editor]
+      summary: "List all editors"
+      parameters:
+        - name: page
+          schema:
+            type: string
+          in: query
+          description: page of results to return
+          required: false
+      responses:
+        200:
+          description: "Successful operation"
+    post:
+        tags: [editor]
+        summary: "Create a new editor"
+        parameters:
+          - name: myEditor
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+            in: body
+        responses:
+          200:
+            description: A new platform has been created
+          400:
+              description: The editor already exist
+  /editors/{name}:
+    get:
+      tags: [editor]
+      summary: "Get one editor"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a editor if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+  /developers:
+    get:
+      tags: [developer]
+      summary: "List all developers"
+      parameters:
+        - name: page
+          schema:
+            type: string
+          in: query
+          description: page of results to return
+          required: false
+      responses:
+        200:
+          description: "Successful operation"
+    post:
+        tags: [developer]
+        summary: "Create a new developer"
+        parameters:
+          - name: myDeveloper
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+            in: body
+        responses:
+          200:
+            description: A new platform has been created
+          400:
+              description: The developer already exist
+  /developers/{name}:
+    get:
+      tags: [developer]
+      summary: "Get one editor"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a developer if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+  /games:
+    get:
+      tags: [game]
+      summary: "List all games"
+      parameters:
+        - name: page
+          schema:
+            type: string
+          in: query
+          description: page of results to return
+          required: false
+      responses:
+        200:
+          description: "Successful operation"
+    post:
+        tags: [game]
+        summary: "Create a new game"
+        parameters:
+          - name: myGame
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+            in: body
+        responses:
+          200:
+            description: A new platform has been created
+          400:
+              description: The game already exist
+  /games/{name}:
+    get:
+      tags: [game]
+      summary: "Get one editor"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a game if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
