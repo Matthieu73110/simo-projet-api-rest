@@ -23,6 +23,8 @@ paths:
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Invalid page value"
     post:
         tags: [platform]
         summary: "Create a new platform"
@@ -38,7 +40,7 @@ paths:
           200:
             description: A new platform has been created
           400:
-              description: The platform already exist
+            description: The platform already exist
   /platforms/{name}:
     get:
       tags: [platform]
@@ -53,6 +55,8 @@ paths:
       responses:
         200:
           description: "Successful operation"
+        404:
+          description: "Platform not found"
     delete:
       tags: [platform]
       summary: "Delete one supported plateform"
@@ -65,6 +69,8 @@ paths:
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Platform not found"
   /platforms/{name}/games:
     get:
       tags: [platform]
@@ -74,11 +80,13 @@ paths:
           schema:
             type: string
           in: path
-          description: a gender if found
+          description: a platform if found
           required: true
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Platform not found"
   /platforms/{name}/games/{game_name}:
     put:
       tags: [platform]
@@ -88,17 +96,19 @@ paths:
           schema:
             type: string
           in: path
-          description: a gender if found
+          description: a platform if found
           required: true
         - name: game_name
           schema:
             type: string
           in: path
-          description: a gender if found
+          description: a game if found
           required: true
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Platform or game not found"
   /genders:
     get:
       tags: [gender]
@@ -143,6 +153,8 @@ paths:
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Gender not found"
     delete:
       tags: [gender]
       summary: "Delete one supported gender"
@@ -155,6 +167,8 @@ paths:
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Gender not found"
   /genders/{name}/games:
     get:
       tags: [gender]
@@ -169,6 +183,8 @@ paths:
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Gender not found"
   /editors:
     get:
       tags: [editor]
@@ -208,11 +224,13 @@ paths:
           schema:
             type: string
           in: path
-          description: a editor if found
+          description: an editor if found
           required: true
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Editor not found"
     delete:
       tags: [editor]
       summary: "Delete one supported editor"
@@ -234,11 +252,13 @@ paths:
           schema:
             type: string
           in: path
-          description: a gender if found
+          description: an editor if found
           required: true
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Editor not found"
   /developers:
     get:
       tags: [developer]
@@ -283,6 +303,8 @@ paths:
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Developer not found"
     delete:
       tags: [developer]
       summary: "Delete one supported developer"
@@ -304,11 +326,13 @@ paths:
           schema:
             type: string
           in: path
-          description: a gender if found
+          description: a developer if found
           required: true
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Developer not found"
   /games:
     get:
       tags: [game]
