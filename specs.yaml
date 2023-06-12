@@ -53,6 +53,52 @@ paths:
       responses:
         200:
           description: "Successful operation"
+    delete:
+      tags: [platform]
+      summary: "Delete one supported plateform"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+  /platforms/{name}/games:
+    get:
+      tags: [platform]
+      summary: "Get all games by plateform"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a gender if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+  /platforms/{name}/games/{game_name}:
+    put:
+      tags: [platform]
+      summary: "Modify a game by platform"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a gender if found
+          required: true
+        - name: game_name
+          schema:
+            type: string
+          in: path
+          description: a gender if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
   /genders:
     get:
       tags: [gender]
@@ -87,6 +133,32 @@ paths:
     get:
       tags: [gender]
       summary: "Get one gender"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a gender if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+    delete:
+      tags: [gender]
+      summary: "Delete one supported gender"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+  /genders/{name}/games:
+    get:
+      tags: [gender]
+      summary: "Get all games by gender"
       parameters:
         - name: name
           schema:
@@ -141,6 +213,32 @@ paths:
       responses:
         200:
           description: "Successful operation"
+    delete:
+      tags: [editor]
+      summary: "Delete one supported editor"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+  /editors/{name}/games:
+    get:
+      tags: [editor]
+      summary: "Get all games by editor"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a gender if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
   /developers:
     get:
       tags: [developer]
@@ -185,6 +283,32 @@ paths:
       responses:
         200:
           description: "Successful operation"
+    delete:
+      tags: [developer]
+      summary: "Delete one supported developer"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+  /developers/{name}/games:
+    get:
+      tags: [developer]
+      summary: "Get all games by developer"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
+          description: a gender if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
   /games:
     get:
       tags: [game]
@@ -225,6 +349,18 @@ paths:
             type: string
           in: path
           description: a game if found
+          required: true
+      responses:
+        200:
+          description: "Successful operation"
+    delete:
+      tags: [game]
+      summary: "Delete one supported game"
+      parameters:
+        - name: name
+          schema:
+            type: string
+          in: path
           required: true
       responses:
         200:
