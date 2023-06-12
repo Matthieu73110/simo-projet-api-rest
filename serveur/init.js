@@ -1,12 +1,8 @@
-const file = require('./students.json');
-
-const {
-  University,
-  Department,
-  AcademicYear,
-  Group,
-  Student
-} = require('./entities.js');
+const Developer = require('./data/developers.json');
+const Game = require('./data/games.json');
+const Editor = require('./data/editors.json');
+const Gender = require('./data/Gender.json');
+const Platform = require('./data/Platform.json');
 
 const init = function () {
   const iut2 = new University();
