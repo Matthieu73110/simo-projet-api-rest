@@ -23,8 +23,6 @@ paths:
       responses:
         200:
           description: "Successful operation"
-        400:
-          description: "Invalid page value"
     post:
         tags: [platform]
         summary: "Create a new platform"
@@ -317,6 +315,8 @@ paths:
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Developer not found"
   /developers/{name}/games:
     get:
       tags: [developer]
@@ -377,6 +377,8 @@ paths:
       responses:
         200:
           description: "Successful operation"
+        400:
+          description: "Game not found"
     delete:
       tags: [game]
       summary: "Delete one supported game"
