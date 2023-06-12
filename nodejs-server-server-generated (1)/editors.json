@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Éditions Dupont",
+    "address": "123 Rue Principale, Paris",
+    "acronym": "EDD"
+  },
+  {
+    "id": 2,
+    "name": "Éditions Martin",
+    "address": "456 Avenue des Roses, Lyon",
+    "acronym": "EDM"
+  },
+  {
+    "id": 3,
+    "name": "Éditions Tremblay",
+    "address": "789 Boulevard du Nord, Montréal",
+    "acronym": "EDT"
+  },
+  {
+    "id": 4,
+    "name": "Éditions Leroy",
+    "address": "1010 Rue Principale, Marseille",
+    "acronym": "EDL"
+  },
+  {
+    "id": 5,
+    "name": "Éditions Dubois",
+    "address": "111 Rue de la Liberté, Bordeaux",
+    "acronym": "EDB"
+  },
+  {
+    "id": 6,
+    "name": "Éditions Rousseau",
+    "address": "222 Avenue du Soleil, Genève",
+    "acronym": "EDR"
+  },
+  {
+    "id": 7,
+    "name": "Éditions Lefebvre",
+    "address": "333 Rue de la Paix, Bruxelles",
+    "acronym": "EDL"
+  },
+  {
+    "id": 8,
+    "name": "Éditions Moreau",
+    "address": "444 Boulevard des Arts, Nice",
+    "acronym": "EDM"
+  },
+  {
+    "id": 9,
+    "name": "Éditions Simon",
+    "address": "555 Rue Principale, Québec",
+    "acronym": "EDS"
+  },
+  {
+    "id": 10,
+    "name": "Éditions Gagnon",
+    "address": "666 Avenue du Ruisseau, Montréal",
+    "acronym": "EDG"
+  }
+]

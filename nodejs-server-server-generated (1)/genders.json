@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Action"
+  },
+  {
+    "id": 2,
+    "name": "Aventure"
+  },
+  {
+    "id": 3,
+    "name": "RPG (jeu de rôle)"
+  },
+  {
+    "id": 4,
+    "name": "FPS (tir à la première personne)"
+  },
+  {
+    "id": 5,
+    "name": "Stratégie"
+  },
+  {
+    "id": 6,
+    "name": "Sport"
+  },
+  {
+    "id": 7,
+    "name": "Course"
+  },
+  {
+    "id": 8,
+    "name": "Simulation"
+  },
+  {
+    "id": 9,
+    "name": "Puzzle"
+  },
+  {
+    "id": 10,
+    "name": "Horreur"
+  }
+]
+
