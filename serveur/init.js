@@ -5,7 +5,7 @@ const Gender = require('./data/Gender.json');
 const Platform = require('./data/Platform.json');
 
 const init = function () {
-  const iut2 = new University();
+  const iut2 = new Catalogue();
 
   ['CJ', 'INFO', 'STID'].forEach((name, i) => {
     const nb = [14, 23, 22, 9, 26, 24, 12, 22, 21, 20];
