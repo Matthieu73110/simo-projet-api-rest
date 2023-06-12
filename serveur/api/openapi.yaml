@@ -1,0 +1,476 @@
+openapi: 3.0.2
+info:
+  title: Sample Games Catalogue Web API
+  description: This is a Web API for Catalogue of games.
+  contact:
+    name: <Prénom Nom>
+    email: login@univ-grenoble-alpes.fr
+  version: 1.0.0
+servers:
+- url: http://localhost:8080
+paths:
+  /platforms:
+    get:
+      tags:
+      - platform
+      summary: List all supported platforms
+      operationId: platformsGET
+      parameters:
+      - name: page
+        in: query
+        description: page of results to return
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+      x-swagger-router-controller: Platform
+    post:
+      tags:
+      - platform
+      summary: Create a new platform
+      operationId: platformsPOST
+      parameters: []
+      responses:
+        "200":
+          description: A new platform has been created
+        "400":
+          description: The platform already exist
+      x-swagger-router-controller: Platform
+  /platforms/{name}:
+    get:
+      tags:
+      - platform
+      summary: Get one supported platform
+      operationId: platformsNameGET
+      parameters:
+      - name: name
+        in: path
+        description: a platform if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "404":
+          description: Platform not found
+      x-swagger-router-controller: Platform
+    delete:
+      tags:
+      - platform
+      summary: Delete one supported plateform
+      operationId: platformsNameDELETE
+      parameters:
+      - name: name
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Platform not found
+      x-swagger-router-controller: Platform
+  /platforms/{name}/games:
+    get:
+      tags:
+      - platform
+      summary: Get all games by plateform
+      operationId: platformsNameGamesGET
+      parameters:
+      - name: name
+        in: path
+        description: a platform if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Platform not found
+      x-swagger-router-controller: Platform
+  /platforms/{name}/games/{game_name}:
+    put:
+      tags:
+      - platform
+      summary: Modify a game by platform
+      operationId: platformsNameGamesGame_namePUT
+      parameters:
+      - name: name
+        in: path
+        description: a platform if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: game_name
+        in: path
+        description: a game if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Platform or game not found
+      x-swagger-router-controller: Platform
+  /genders:
+    get:
+      tags:
+      - gender
+      summary: List all genders
+      operationId: gendersGET
+      parameters:
+      - name: page
+        in: query
+        description: page of results to return
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+      x-swagger-router-controller: Gender
+    post:
+      tags:
+      - gender
+      summary: Create a new gender
+      operationId: gendersPOST
+      parameters: []
+      responses:
+        "200":
+          description: A new gender has been created
+        "400":
+          description: The gender already exist
+      x-swagger-router-controller: Gender
+  /genders/{name}:
+    get:
+      tags:
+      - gender
+      summary: Get one gender
+      operationId: gendersNameGET
+      parameters:
+      - name: name
+        in: path
+        description: a gender if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Gender not found
+      x-swagger-router-controller: Gender
+    delete:
+      tags:
+      - gender
+      summary: Delete one supported gender
+      operationId: gendersNameDELETE
+      parameters:
+      - name: name
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Gender not found
+      x-swagger-router-controller: Gender
+  /genders/{name}/games:
+    get:
+      tags:
+      - gender
+      summary: Get all games by gender
+      operationId: gendersNameGamesGET
+      parameters:
+      - name: name
+        in: path
+        description: a gender if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Gender not found
+      x-swagger-router-controller: Gender
+  /editors:
+    get:
+      tags:
+      - editor
+      summary: List all editors
+      operationId: editorsGET
+      parameters:
+      - name: page
+        in: query
+        description: page of results to return
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+      x-swagger-router-controller: Editor
+    post:
+      tags:
+      - editor
+      summary: Create a new editor
+      operationId: editorsPOST
+      parameters: []
+      responses:
+        "200":
+          description: A new platform has been created
+        "400":
+          description: The editor already exist
+      x-swagger-router-controller: Editor
+  /editors/{name}:
+    get:
+      tags:
+      - editor
+      summary: Get one editor
+      operationId: editorsNameGET
+      parameters:
+      - name: name
+        in: path
+        description: an editor if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Editor not found
+      x-swagger-router-controller: Editor
+    delete:
+      tags:
+      - editor
+      summary: Delete one supported editor
+      operationId: editorsNameDELETE
+      parameters:
+      - name: name
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+      x-swagger-router-controller: Editor
+  /editors/{name}/games:
+    get:
+      tags:
+      - editor
+      summary: Get all games by editor
+      operationId: editorsNameGamesGET
+      parameters:
+      - name: name
+        in: path
+        description: an editor if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Editor not found
+      x-swagger-router-controller: Editor
+  /developers:
+    get:
+      tags:
+      - developer
+      summary: List all developers
+      operationId: developersGET
+      parameters:
+      - name: page
+        in: query
+        description: page of results to return
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+      x-swagger-router-controller: Developer
+    post:
+      tags:
+      - developer
+      summary: Create a new developer
+      operationId: developersPOST
+      parameters: []
+      responses:
+        "200":
+          description: A new platform has been created
+        "400":
+          description: The developer already exist
+      x-swagger-router-controller: Developer
+  /developers/{name}:
+    get:
+      tags:
+      - developer
+      summary: Get one editor
+      operationId: developersNameGET
+      parameters:
+      - name: name
+        in: path
+        description: a developer if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Developer not found
+      x-swagger-router-controller: Developer
+    delete:
+      tags:
+      - developer
+      summary: Delete one supported developer
+      operationId: developersNameDELETE
+      parameters:
+      - name: name
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Developer not found
+      x-swagger-router-controller: Developer
+  /developers/{name}/games:
+    get:
+      tags:
+      - developer
+      summary: Get all games by developer
+      operationId: developersNameGamesGET
+      parameters:
+      - name: name
+        in: path
+        description: a developer if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Developer not found
+      x-swagger-router-controller: Developer
+  /games:
+    get:
+      tags:
+      - game
+      summary: List all games
+      operationId: gamesGET
+      parameters:
+      - name: page
+        in: query
+        description: page of results to return
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+      x-swagger-router-controller: Game
+    post:
+      tags:
+      - game
+      summary: Create a new game
+      operationId: gamesPOST
+      parameters: []
+      responses:
+        "200":
+          description: A new platform has been created
+        "400":
+          description: The game already exist
+      x-swagger-router-controller: Game
+  /games/{name}:
+    get:
+      tags:
+      - game
+      summary: Get one editor
+      operationId: gamesNameGET
+      parameters:
+      - name: name
+        in: path
+        description: a game if found
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Game not found
+      x-swagger-router-controller: Game
+    delete:
+      tags:
+      - game
+      summary: Delete one supported game
+      operationId: gamesNameDELETE
+      parameters:
+      - name: name
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Successful operation
+      x-swagger-router-controller: Game
+components: {}
