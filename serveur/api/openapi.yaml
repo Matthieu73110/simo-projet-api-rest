@@ -512,6 +512,8 @@ paths:
       responses:
         "200":
           description: Successful operation
+        "400":
+          description: Delete not possible beacouse id_game not exist
       x-swagger-router-controller: Game
 components:
   schemas:
