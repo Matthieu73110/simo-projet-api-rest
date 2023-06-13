@@ -21,4 +21,14 @@ class Platform {
         });
         return false;
     }
+    // Modify the game associed plateform
+    modifyGame(body, id_game){
+        if (!this.games.includes(id_game)){
+            return false;
+        }
+
+        game = this.getGameById(id_game);
+        
+        game.name = body.name;
+    }
 }

@@ -13,6 +13,16 @@ module.exports.platformsGET = function platformsGET (req, res, next, page) {
     });
 };
 
+module.exports.platformsId_platformGamesId_gamePUT = function platformsId_platformGamesId_gamePUT (req, res, next, body, id_platform, id_game) {
+  Platform.platformsId_platformGamesId_gamePUT(body, id_platform, id_game)
+    .then(function (response) {
+      utils.writeJson(res, response);
+    })
+    .catch(function (response) {
+      utils.writeJson(res, response);
+    });
+};
+
 module.exports.platformsNameDELETE = function platformsNameDELETE (req, res, next, name) {
   Platform.platformsNameDELETE(name)
     .then(function (response) {
@@ -43,18 +53,8 @@ module.exports.platformsNameGamesGET = function platformsNameGamesGET (req, res,
     });
 };
 
-module.exports.platformsNameGamesGame_namePUT = function platformsNameGamesGame_namePUT (req, res, next, name, game_name) {
-  Platform.platformsNameGamesGame_namePUT(name, game_name)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
-};
-
-module.exports.platformsPOST = function platformsPOST (req, res, next, body) {
-  Platform.platformsPOST(body)
+module.exports.platformsNamePOST = function platformsNamePOST (req, res, next, body, name) {
+  Platform.platformsNamePOST(body, name)
     .then(function (response) {
       utils.writeJson(res, response);
     })

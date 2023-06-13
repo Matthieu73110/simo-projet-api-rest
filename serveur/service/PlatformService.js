@@ -15,6 +15,21 @@ exports.platformsGET = function(page) {
 
 
 /**
+ * Modify a game by platform
+ *
+ * body Games_id_game_body 
+ * id_platform String a platform if found
+ * id_game String a game if found
+ * no response value expected for this operation
+ **/
+exports.platformsId_platformGamesId_gamePUT = function(body,id_platform,id_game) {
+  return new Promise(function(resolve, reject) {
+    resolve();
+  });
+}
+
+
+/**
  * Delete one supported plateform
  *
  * name String 
@@ -54,26 +69,13 @@ exports.platformsNameGamesGET = function(name) {
 
 
 /**
- * Modify a game by platform
- *
- * name String a platform if found
- * game_name String a game if found
- * no response value expected for this operation
- **/
-exports.platformsNameGamesGame_namePUT = function(name,game_name) {
-  return new Promise(function(resolve, reject) {
-    resolve();
-  });
-}
-
-
-/**
  * Create a new platform
  *
- * body Platforms_body 
+ * body Platforms_name_body 
+ * name String name platform
  * no response value expected for this operation
  **/
-exports.platformsPOST = function(body) {
+exports.platformsNamePOST = function(body,name) {
   return new Promise(function(resolve, reject) {
     resolve();
   });
