@@ -1,4 +1,8 @@
 'use strict';
+const Developer = require('./src/Developer.js');
+const Editor = require('./src/Editor.js');
+const Gender = require('./src/Gender.js');
+const Platform = require('./src/Platform.js');
 
 class Game {
     constructor(data = {Object}, platforms = {Array}) {
@@ -10,7 +14,7 @@ class Game {
         this.rates = data.rates;
         this.developer = null;
         this.editor = null;
-        this.genres = [];
+        this.genders = [];
         this.addPlatform(platforms);
     }
 
@@ -19,11 +23,12 @@ class Game {
         this.platforms = platformIdList;
     }
 
-    // Add list of genre into this.genres
-    addGenres(genreList = {Array}) {
-        genreList.forEach(genre => {
-            if (!this.genres.find(genre => genre.id === id)) {
-                this.genres.push(genre.id);
+    // Add list of gender into this.genders
+    addGenders(genderList = {Array}) {
+        genderList.forEach(genderAsk => {
+            if (!this.genders.find(genderAsk => genderAsk.id === id)) {
+                this.genders.push(gender.id);
+                genderAsk.addGame(this);
             }
         });
     }
@@ -31,10 +36,12 @@ class Game {
     // Update editor  
     updateEditor(editor = {Object}){
         this.editor = editor;
+        editor.addGames(this);
     }
 
     // Update developer  
     updateDeveloper(developer = {Object}){
         this.developer = developer;
+        developer.addGames(this);
     }
 }

@@ -1,8 +1,14 @@
-const Developer = require('./data/developers.json');
-const Game = require('./data/games.json');
-const Editor = require('./data/editors.json');
-const Gender = require('./data/Gender.json');
-const Platform = require('./data/Platform.json');
+const DeveloperData = require('./data/developers.json');
+const GameData = require('./data/games.json');
+const EditorData = require('./data/editors.json');
+const GenderData = require('./data/Gender.json');
+const PlatformData = require('./data/Platform.json');
+
+const Developer = require('./src/Developer.js');
+const Game = require('./src/Developer.js');
+const Editor = require('./src/Developer.js');
+const Gender = require('./src/Developer.js');
+const Platform = require('./src/Developer.js');
 
 const init = function () {
   const iut2 = new Catalogue();
