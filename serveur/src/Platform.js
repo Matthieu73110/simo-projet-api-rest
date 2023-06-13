@@ -21,14 +21,42 @@ class Platform {
         });
         return false;
     }
+
     // Modify the game associed plateform
     modifyGame(body, id_game){
         if (!this.games.includes(id_game)){
             return false;
         }
 
-        game = this.getGameById(id_game);
+        if (body.name != null){
+            game.name = body.name;
+        }
         
-        game.name = body.name;
+        if (body.price != null){
+            game.price =  body.price;
+        }
+
+        if (body.releaseDate != null){
+            game.price =  body.releaseDate;
+        }
+
+        if (body.sellNb != null){
+            game.price =  body.sellNb;
+        }
+        
+        if (body.rates != null){
+            game.price =  body.rates;
+        }
+        
+        return game;
+    }
+
+    deleteGames(){
+        this.games = [];
+    }
+
+    modifyGameByPlatform(body, id_game){
+
+
     }
 }
