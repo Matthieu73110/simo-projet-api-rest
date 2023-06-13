@@ -13,62 +13,52 @@ const Platform = require('./src/Developer.js');
 const init = function () {
   const iut2 = new Catalogue();
 
-  // Load Platform
+  // Loading data into classes
+  const developers = DeveloperData.map(data => new Developer(data));
+  const games = GameData.map(data => new Game(data));
+  const editors = EditorData.map(data => new Editor(data));
+  const genders = GenderData.map(data => new Gender(data));
+  const platforms = PlatformData.map(data => new Platform(data));
 
-  // Load Editor
+  // Creating link between Game and other classes
+  games.forEach(game => {
 
-  // Load Gender
+    // Load developers
+    let randomNumber = Math.round(Math.random()*developers.length);
+    const developer = developers.find(dev => dev.id === randomNumber);
+    game.updateDeveloper(developer);
 
-  // Load Developer
+    // Load editors
+    randomNumber = Math.round(Math.random()*editors.length);
+    const editor = editors.find(editor => editor.id === randomNumber);
+    game.updateEditor(editor);
 
-  // Load Game
+    // Load genders
+    randomNumber = Math.round(Math.random()*genders.length);
+    let genderList = [];
+    for (let i = 0; i < randomNumber; i++) {
+      randomGender = Math.round(Math.random()*genders.length);
+      genderList.push(genders[randomGender]);
+    }
+    game.addGenders(genderList);
 
-  // ['CJ', 'INFO', 'STID'].forEach((name, i) => {
-  //   const nb = [14, 23, 22, 9, 26, 24, 12, 22, 21, 20];
-  //   const department = new Department({
-  //     name: name
-  //   });
+    // Load platforms
+    randomNumber = Math.round(Math.random()*platforms.length);
+    let platformList = [];
+    for (let i = 0; i < randomNumber; i++) {
+      randomPlatform = Math.round(Math.random()*platforms.length);
+      platformList.push(platforms[randomPlatform]);
+    }
+    game.addGenders(platformList);
 
-  //   for (let k = 0; k < nb.length; k++) {
-  //     nb[k] = nb[k] + i;
-  //   }
-  //   for (let k = 0; k < nb.reduce((acc, curr) => acc + curr, 0); k++) {
-  //     const student = new Student(Object.values(file)[k]);
-  //     department.students.push(student);
-  //     student.department = department;
-  //   }
-  //   const academicYear = new AcademicYear({
-  //     label: '2022-2023'
-  //   });
-  //   department.years.push(academicYear);
-  //   academicYear.department = department;
-  //   let index = 0;
-  //   ['1a', '1b', '1c', '1d', '1e'].forEach((j, p) => {
-  //     const gr = new Group({
-  //       label: department.name.toLowerCase() + j
-  //     });
-  //     academicYear.groups.push(gr);
-  //     gr.year = academicYear;
-  //     for (let o = 0; o < nb[p]; o++) {
-  //       const st = department.students[index++];
-  //       gr.enrolled.push(st);
-  //       st.group = gr;
-  //     }
-  //   });
-  //   ['2a', '2b', '2c', '2d', '2e'].forEach((j, p) => {
-  //     const gr = new Group({
-  //       label: department.name.toLowerCase() + j
-  //     });
-  //     academicYear.groups.push(gr);
-  //     gr.year = academicYear;
-  //     for (let o = 0; o < nb[p + 5]; o++) {
-  //       const st = department.students[index++];
-  //       gr.enrolled.push(st);
-  //       st.group = gr;
-  //     }
-  //   });
-  //   iut2.departments.push(department);
-  // });
+  });
+
+  iut2.push(developers);
+  iut2.push(games);
+  iut2.push(editors);
+  iut2.push(genders);
+  iut2.push(platforms);
+
   return iut2;
 };
 

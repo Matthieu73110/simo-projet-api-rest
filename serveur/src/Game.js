@@ -5,7 +5,7 @@ const Gender = require('./src/Gender.js');
 const Platform = require('./src/Platform.js');
 
 class Game {
-    constructor(data = {Object}, platforms = {Array}) {
+    constructor(data = {Object}) {
         this.id = data.id;
         this.name = data.name;
         this.price = data.price;
@@ -15,7 +15,7 @@ class Game {
         this.developer = null;
         this.editor = null;
         this.genders = [];
-        this.addPlatform(platforms);
+        this.platforms = [];
     }
 
     // Add a platform for this game
