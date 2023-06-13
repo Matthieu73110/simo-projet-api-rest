@@ -1,3 +1,5 @@
+'use strict';
+
 class Editor {
     constructor(data = {}) {
       this.id = data.id;

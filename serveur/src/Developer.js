@@ -1,3 +1,5 @@
+'use strict';
+
 class Developer {
     constructor(data={}) {
         this.id = data.id;
