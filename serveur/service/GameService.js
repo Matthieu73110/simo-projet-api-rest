@@ -43,9 +43,10 @@ exports.gamesNameGET = function(name) {
 /**
  * Create a new game
  *
+ * body Games_body 
  * no response value expected for this operation
  **/
-exports.gamesPOST = function() {
+exports.gamesPOST = function(body) {
   return new Promise(function(resolve, reject) {
     resolve();
   });

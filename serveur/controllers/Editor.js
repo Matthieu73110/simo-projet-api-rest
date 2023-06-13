@@ -43,8 +43,8 @@ module.exports.editorsNameGamesGET = function editorsNameGamesGET (req, res, nex
     });
 };
 
-module.exports.editorsPOST = function editorsPOST (req, res, next) {
-  Editor.editorsPOST()
+module.exports.editorsPOST = function editorsPOST (req, res, next, body) {
+  Editor.editorsPOST(body)
     .then(function (response) {
       utils.writeJson(res, response);
     })

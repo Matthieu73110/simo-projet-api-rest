@@ -43,8 +43,8 @@ module.exports.gendersNameGamesGET = function gendersNameGamesGET (req, res, nex
     });
 };
 
-module.exports.gendersPOST = function gendersPOST (req, res, next) {
-  Gender.gendersPOST()
+module.exports.gendersPOST = function gendersPOST (req, res, next, body) {
+  Gender.gendersPOST(body)
     .then(function (response) {
       utils.writeJson(res, response);
     })

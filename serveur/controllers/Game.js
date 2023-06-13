@@ -33,8 +33,8 @@ module.exports.gamesNameGET = function gamesNameGET (req, res, next, name) {
     });
 };
 
-module.exports.gamesPOST = function gamesPOST (req, res, next) {
-  Game.gamesPOST()
+module.exports.gamesPOST = function gamesPOST (req, res, next, body) {
+  Game.gamesPOST(body)
     .then(function (response) {
       utils.writeJson(res, response);
     })

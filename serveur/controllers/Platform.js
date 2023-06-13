@@ -53,8 +53,8 @@ module.exports.platformsNameGamesGame_namePUT = function platformsNameGamesGame_
     });
 };
 
-module.exports.platformsPOST = function platformsPOST (req, res, next) {
-  Platform.platformsPOST()
+module.exports.platformsPOST = function platformsPOST (req, res, next, body) {
+  Platform.platformsPOST(body)
     .then(function (response) {
       utils.writeJson(res, response);
     })

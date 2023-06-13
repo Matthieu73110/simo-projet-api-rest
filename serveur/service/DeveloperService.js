@@ -9,7 +9,7 @@
  **/
 exports.developersGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve(require('../data/developers.json'));
+    resolve();
   });
 }
 
@@ -56,9 +56,10 @@ exports.developersNameGamesGET = function(name) {
 /**
  * Create a new developer
  *
+ * body Developers_body 
  * no response value expected for this operation
  **/
-exports.developersPOST = function() {
+exports.developersPOST = function(body) {
   return new Promise(function(resolve, reject) {
     resolve();
   });

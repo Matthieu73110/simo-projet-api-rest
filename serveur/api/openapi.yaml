@@ -33,7 +33,12 @@ paths:
       - platform
       summary: Create a new platform
       operationId: platformsPOST
-      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/platforms_body'
+        required: true
       responses:
         "200":
           description: A new platform has been created
@@ -154,7 +159,12 @@ paths:
       - gender
       summary: Create a new gender
       operationId: gendersPOST
-      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/genders_body'
+        required: true
       responses:
         "200":
           description: A new gender has been created
@@ -246,7 +256,12 @@ paths:
       - editor
       summary: Create a new editor
       operationId: editorsPOST
-      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/editors_body'
+        required: true
       responses:
         "200":
           description: A new platform has been created
@@ -336,7 +351,12 @@ paths:
       - developer
       summary: Create a new developer
       operationId: developersPOST
-      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/developers_body'
+        required: true
       responses:
         "200":
           description: A new platform has been created
@@ -428,7 +448,12 @@ paths:
       - game
       summary: Create a new game
       operationId: gamesPOST
-      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/games_body'
+        required: true
       responses:
         "200":
           description: A new platform has been created
@@ -473,4 +498,30 @@ paths:
         "200":
           description: Successful operation
       x-swagger-router-controller: Game
-components: {}
+components:
+  schemas:
+    platforms_body:
+      type: object
+      properties:
+        name:
+          type: string
+    genders_body:
+      type: object
+      properties:
+        name:
+          type: string
+    editors_body:
+      type: object
+      properties:
+        name:
+          type: string
+    developers_body:
+      type: object
+      properties:
+        name:
+          type: string
+    games_body:
+      type: object
+      properties:
+        name:
+          type: string

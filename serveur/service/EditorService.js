@@ -56,9 +56,10 @@ exports.editorsNameGamesGET = function(name) {
 /**
  * Create a new editor
  *
+ * body Editors_body 
  * no response value expected for this operation
  **/
-exports.editorsPOST = function() {
+exports.editorsPOST = function(body) {
   return new Promise(function(resolve, reject) {
     resolve();
   });

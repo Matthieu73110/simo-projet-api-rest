@@ -43,8 +43,8 @@ module.exports.developersNameGamesGET = function developersNameGamesGET (req, re
     });
 };
 
-module.exports.developersPOST = function developersPOST (req, res, next) {
-  Developer.developersPOST()
+module.exports.developersPOST = function developersPOST (req, res, next, body) {
+  Developer.developersPOST(body)
     .then(function (response) {
       utils.writeJson(res, response);
     })

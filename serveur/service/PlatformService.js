@@ -70,9 +70,10 @@ exports.platformsNameGamesGame_namePUT = function(name,game_name) {
 /**
  * Create a new platform
  *
+ * body Platforms_body 
  * no response value expected for this operation
  **/
-exports.platformsPOST = function() {
+exports.platformsPOST = function(body) {
   return new Promise(function(resolve, reject) {
     resolve();
   });

@@ -56,9 +56,10 @@ exports.gendersNameGamesGET = function(name) {
 /**
  * Create a new gender
  *
+ * body Genders_body 
  * no response value expected for this operation
  **/
-exports.gendersPOST = function() {
+exports.gendersPOST = function(body) {
   return new Promise(function(resolve, reject) {
     resolve();
   });
