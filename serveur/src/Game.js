@@ -19,8 +19,22 @@ class Game {
         this.platforms = platformIdList;
     }
 
-    //
-    addGenres() {
-        
+    // Add list of genre into this.genres
+    addGenres(genreList = {Array}) {
+        genreList.forEach(genre => {
+            if (!this.genres.find(genre => genre.id === id)) {
+                this.genres.push(genre.id);
+            }
+        });
+    }
+
+    // Update editor  
+    updateEditor(editor = {Object}){
+        this.editor = editor;
+    }
+
+    // Update developer  
+    updateDeveloper(developer = {Object}){
+        this.developer = developer;
     }
 }
