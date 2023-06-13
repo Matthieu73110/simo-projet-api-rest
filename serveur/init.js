@@ -11,7 +11,7 @@ const Gender = require('./src/Developer.js');
 const Platform = require('./src/Developer.js');
 
 const init = function () {
-  const iut2 = new Catalogue();
+  const catalogue = new Catalogue();
 
   // Loading data into classes
   const developers = DeveloperData.map(data => new Developer(data));
@@ -53,13 +53,13 @@ const init = function () {
 
   });
 
-  iut2.push(developers);
-  iut2.push(games);
-  iut2.push(editors);
-  iut2.push(genders);
-  iut2.push(platforms);
+  catalogue.push(developers);
+  catalogue.push(games);
+  catalogue.push(editors);
+  catalogue.push(genders);
+  catalogue.push(platforms);
 
-  return iut2;
+  return catalogue;
 };
 
 module.exports = init;
