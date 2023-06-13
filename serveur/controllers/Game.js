@@ -13,8 +13,8 @@ module.exports.gamesGET = function gamesGET (req, res, next, page) {
     });
 };
 
-module.exports.gamesNameDELETE = function gamesNameDELETE (req, res, next, name) {
-  Game.gamesNameDELETE(name)
+module.exports.gamesId_gameDELETE = function gamesId_gameDELETE (req, res, next, id_game) {
+  Game.gamesId_gameDELETE(id_game)
     .then(function (response) {
       utils.writeJson(res, response);
     })
@@ -23,8 +23,8 @@ module.exports.gamesNameDELETE = function gamesNameDELETE (req, res, next, name)
     });
 };
 
-module.exports.gamesNameGET = function gamesNameGET (req, res, next, name) {
-  Game.gamesNameGET(name)
+module.exports.gamesId_gameGET = function gamesId_gameGET (req, res, next, id_game) {
+  Game.gamesId_gameGET(id_game)
     .then(function (response) {
       utils.writeJson(res, response);
     })

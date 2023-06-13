@@ -28,21 +28,21 @@ paths:
         "200":
           description: Successful operation
       x-swagger-router-controller: Platform
-  /platforms/{name}:
+  /platforms/{id_platform}:
     get:
       tags:
       - platform
       summary: Get one supported platform
-      operationId: platformsNameGET
+      operationId: platformsId_platformGET
       parameters:
-      - name: name
+      - name: id_platform
         in: path
         description: a platform if found
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -53,21 +53,21 @@ paths:
       tags:
       - platform
       summary: Create a new platform
-      operationId: platformsNamePOST
+      operationId: platformsId_platformPOST
       parameters:
-      - name: name
+      - name: id_platform
         in: path
         description: name platform
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/platforms_name_body'
+              $ref: '#/components/schemas/platforms_id_platform_body'
         required: true
       responses:
         "200":
@@ -79,36 +79,36 @@ paths:
       tags:
       - platform
       summary: Delete one supported plateform
-      operationId: platformsNameDELETE
+      operationId: platformsId_platformDELETE
       parameters:
-      - name: name
+      - name: id_platform
         in: path
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
         "400":
           description: Platform not found
       x-swagger-router-controller: Platform
-  /platforms/{name}/games:
+  /platforms/{id_platform}/games:
     get:
       tags:
       - platform
       summary: Get all games by plateform
-      operationId: platformsNameGamesGET
+      operationId: platformsId_platformGamesGET
       parameters:
-      - name: name
+      - name: id_platform
         in: path
         description: a platform if found
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -129,7 +129,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       - name: id_game
         in: path
         description: a game if found
@@ -137,7 +137,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       requestBody:
         content:
           application/json:
@@ -186,21 +186,21 @@ paths:
         "400":
           description: The gender already exist
       x-swagger-router-controller: Gender
-  /genders/{name}:
+  /genders/{id_gender}:
     get:
       tags:
       - gender
       summary: Get one gender
-      operationId: gendersNameGET
+      operationId: gendersId_genderGET
       parameters:
-      - name: name
+      - name: id_gender
         in: path
         description: a gender if found
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -211,36 +211,36 @@ paths:
       tags:
       - gender
       summary: Delete one supported gender
-      operationId: gendersNameDELETE
+      operationId: gendersId_genderDELETE
       parameters:
-      - name: name
+      - name: id_gender
         in: path
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
         "400":
           description: Gender not found
       x-swagger-router-controller: Gender
-  /genders/{name}/games:
+  /genders/{id_gender}/games:
     get:
       tags:
       - gender
       summary: Get all games by gender
-      operationId: gendersNameGamesGET
+      operationId: gendersId_genderGamesGET
       parameters:
-      - name: name
+      - name: id_gender
         in: path
         description: a gender if found
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -283,21 +283,21 @@ paths:
         "400":
           description: The editor already exist
       x-swagger-router-controller: Editor
-  /editors/{name}:
+  /editors/{id_editor}:
     get:
       tags:
       - editor
       summary: Get one editor
-      operationId: editorsNameGET
+      operationId: editorsId_editorGET
       parameters:
-      - name: name
+      - name: id_editor
         in: path
         description: an editor if found
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -308,9 +308,9 @@ paths:
       tags:
       - editor
       summary: Delete one supported editor
-      operationId: editorsNameDELETE
+      operationId: editorsId_editorDELETE
       parameters:
-      - name: name
+      - name: id_editor
         in: path
         required: true
         style: simple
@@ -321,21 +321,21 @@ paths:
         "200":
           description: Successful operation
       x-swagger-router-controller: Editor
-  /editors/{name}/games:
+  /editors/{id_editor}/games:
     get:
       tags:
       - editor
       summary: Get all games by editor
-      operationId: editorsNameGamesGET
+      operationId: editorsId_editorGamesGET
       parameters:
-      - name: name
+      - name: id_editor
         in: path
         description: an editor if found
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -356,7 +356,7 @@ paths:
         style: form
         explode: true
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -378,21 +378,21 @@ paths:
         "400":
           description: The developer already exist
       x-swagger-router-controller: Developer
-  /developers/{name}:
+  /developers/{id_developer}:
     get:
       tags:
       - developer
       summary: Get one editor
-      operationId: developersNameGET
+      operationId: developersId_developerGET
       parameters:
-      - name: name
+      - name: id_developer
         in: path
         description: a developer if found
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -403,36 +403,36 @@ paths:
       tags:
       - developer
       summary: Delete one supported developer
-      operationId: developersNameDELETE
+      operationId: developersId_developerDELETE
       parameters:
-      - name: name
+      - name: id_developer
         in: path
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
         "400":
           description: Developer not found
       x-swagger-router-controller: Developer
-  /developers/{name}/games:
+  /developers/{id_developer}/games:
     get:
       tags:
       - developer
       summary: Get all games by developer
-      operationId: developersNameGamesGET
+      operationId: developersId_developerGamesGET
       parameters:
-      - name: name
+      - name: id_developer
         in: path
         description: a developer if found
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -475,21 +475,21 @@ paths:
         "400":
           description: The game already exist
       x-swagger-router-controller: Game
-  /games/{name}:
+  /games/{id_game}:
     get:
       tags:
       - game
       summary: Get one editor
-      operationId: gamesNameGET
+      operationId: gamesId_gameGET
       parameters:
-      - name: name
+      - name: id_game
         in: path
         description: a game if found
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
@@ -500,22 +500,22 @@ paths:
       tags:
       - game
       summary: Delete one supported game
-      operationId: gamesNameDELETE
+      operationId: gamesId_gameDELETE
       parameters:
-      - name: name
+      - name: id_game
         in: path
         required: true
         style: simple
         explode: false
         schema:
-          type: string
+          type: integer
       responses:
         "200":
           description: Successful operation
       x-swagger-router-controller: Game
 components:
   schemas:
-    platforms_name_body:
+    platforms_id_platform_body:
       type: object
       properties:
         name:

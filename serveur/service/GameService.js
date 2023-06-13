@@ -17,10 +17,10 @@ exports.gamesGET = function(page) {
 /**
  * Delete one supported game
  *
- * name String 
+ * id_game Integer 
  * no response value expected for this operation
  **/
-exports.gamesNameDELETE = function(name) {
+exports.gamesId_gameDELETE = function(id_game) {
   return new Promise(function(resolve, reject) {
     resolve();
   });
@@ -30,10 +30,10 @@ exports.gamesNameDELETE = function(name) {
 /**
  * Get one editor
  *
- * name String a game if found
+ * id_game Integer a game if found
  * no response value expected for this operation
  **/
-exports.gamesNameGET = function(name) {
+exports.gamesId_gameGET = function(id_game) {
   return new Promise(function(resolve, reject) {
     resolve();
   });

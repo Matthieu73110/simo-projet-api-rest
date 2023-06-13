@@ -13,8 +13,8 @@ module.exports.editorsGET = function editorsGET (req, res, next, page) {
     });
 };
 
-module.exports.editorsNameDELETE = function editorsNameDELETE (req, res, next, name) {
-  Editor.editorsNameDELETE(name)
+module.exports.editorsId_editorDELETE = function editorsId_editorDELETE (req, res, next, id_editor) {
+  Editor.editorsId_editorDELETE(id_editor)
     .then(function (response) {
       utils.writeJson(res, response);
     })
@@ -23,8 +23,8 @@ module.exports.editorsNameDELETE = function editorsNameDELETE (req, res, next, n
     });
 };
 
-module.exports.editorsNameGET = function editorsNameGET (req, res, next, name) {
-  Editor.editorsNameGET(name)
+module.exports.editorsId_editorGET = function editorsId_editorGET (req, res, next, id_editor) {
+  Editor.editorsId_editorGET(id_editor)
     .then(function (response) {
       utils.writeJson(res, response);
     })
@@ -33,8 +33,8 @@ module.exports.editorsNameGET = function editorsNameGET (req, res, next, name) {
     });
 };
 
-module.exports.editorsNameGamesGET = function editorsNameGamesGET (req, res, next, name) {
-  Editor.editorsNameGamesGET(name)
+module.exports.editorsId_editorGamesGET = function editorsId_editorGamesGET (req, res, next, id_editor) {
+  Editor.editorsId_editorGamesGET(id_editor)
     .then(function (response) {
       utils.writeJson(res, response);
     })

@@ -15,11 +15,50 @@ exports.platformsGET = function(page) {
 
 
 /**
+ * Delete one supported plateform
+ *
+ * id_platform Integer 
+ * no response value expected for this operation
+ **/
+exports.platformsId_platformDELETE = function(id_platform) {
+  return new Promise(function(resolve, reject) {
+    resolve();
+  });
+}
+
+
+/**
+ * Get one supported platform
+ *
+ * id_platform Integer a platform if found
+ * no response value expected for this operation
+ **/
+exports.platformsId_platformGET = function(id_platform) {
+  return new Promise(function(resolve, reject) {
+    resolve();
+  });
+}
+
+
+/**
+ * Get all games by plateform
+ *
+ * id_platform Integer a platform if found
+ * no response value expected for this operation
+ **/
+exports.platformsId_platformGamesGET = function(id_platform) {
+  return new Promise(function(resolve, reject) {
+    resolve();
+  });
+}
+
+
+/**
  * Modify a game by platform
  *
  * body Games_id_game_body 
- * id_platform String a platform if found
- * id_game String a game if found
+ * id_platform Integer a platform if found
+ * id_game Integer a game if found
  * no response value expected for this operation
  **/
 exports.platformsId_platformGamesId_gamePUT = function(body,id_platform,id_game) {
@@ -30,52 +69,13 @@ exports.platformsId_platformGamesId_gamePUT = function(body,id_platform,id_game)
 
 
 /**
- * Delete one supported plateform
- *
- * name String 
- * no response value expected for this operation
- **/
-exports.platformsNameDELETE = function(name) {
-  return new Promise(function(resolve, reject) {
-    resolve();
-  });
-}
-
-
-/**
- * Get one supported platform
- *
- * name String a platform if found
- * no response value expected for this operation
- **/
-exports.platformsNameGET = function(name) {
-  return new Promise(function(resolve, reject) {
-    resolve();
-  });
-}
-
-
-/**
- * Get all games by plateform
- *
- * name String a platform if found
- * no response value expected for this operation
- **/
-exports.platformsNameGamesGET = function(name) {
-  return new Promise(function(resolve, reject) {
-    resolve();
-  });
-}
-
-
-/**
  * Create a new platform
  *
- * body Platforms_name_body 
- * name String name platform
+ * body Platforms_id_platform_body 
+ * id_platform Integer name platform
  * no response value expected for this operation
  **/
-exports.platformsNamePOST = function(body,name) {
+exports.platformsId_platformPOST = function(body,id_platform) {
   return new Promise(function(resolve, reject) {
     resolve();
   });

@@ -17,10 +17,10 @@ exports.gendersGET = function(page) {
 /**
  * Delete one supported gender
  *
- * name String 
+ * id_gender Integer 
  * no response value expected for this operation
  **/
-exports.gendersNameDELETE = function(name) {
+exports.gendersId_genderDELETE = function(id_gender) {
   return new Promise(function(resolve, reject) {
     resolve();
   });
@@ -30,10 +30,10 @@ exports.gendersNameDELETE = function(name) {
 /**
  * Get one gender
  *
- * name String a gender if found
+ * id_gender Integer a gender if found
  * no response value expected for this operation
  **/
-exports.gendersNameGET = function(name) {
+exports.gendersId_genderGET = function(id_gender) {
   return new Promise(function(resolve, reject) {
     resolve();
   });
@@ -43,10 +43,10 @@ exports.gendersNameGET = function(name) {
 /**
  * Get all games by gender
  *
- * name String a gender if found
+ * id_gender Integer a gender if found
  * no response value expected for this operation
  **/
-exports.gendersNameGamesGET = function(name) {
+exports.gendersId_genderGamesGET = function(id_gender) {
   return new Promise(function(resolve, reject) {
     resolve();
   });

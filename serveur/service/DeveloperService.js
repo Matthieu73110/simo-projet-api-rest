@@ -4,7 +4,7 @@
 /**
  * List all developers
  *
- * page String page of results to return (optional)
+ * page Integer page of results to return (optional)
  * no response value expected for this operation
  **/
 exports.developersGET = function(page) {
@@ -17,10 +17,10 @@ exports.developersGET = function(page) {
 /**
  * Delete one supported developer
  *
- * name String 
+ * id_developer Integer 
  * no response value expected for this operation
  **/
-exports.developersNameDELETE = function(name) {
+exports.developersId_developerDELETE = function(id_developer) {
   return new Promise(function(resolve, reject) {
     resolve();
   });
@@ -30,10 +30,10 @@ exports.developersNameDELETE = function(name) {
 /**
  * Get one editor
  *
- * name String a developer if found
+ * id_developer Integer a developer if found
  * no response value expected for this operation
  **/
-exports.developersNameGET = function(name) {
+exports.developersId_developerGET = function(id_developer) {
   return new Promise(function(resolve, reject) {
     resolve();
   });
@@ -43,10 +43,10 @@ exports.developersNameGET = function(name) {
 /**
  * Get all games by developer
  *
- * name String a developer if found
+ * id_developer Integer a developer if found
  * no response value expected for this operation
  **/
-exports.developersNameGamesGET = function(name) {
+exports.developersId_developerGamesGET = function(id_developer) {
   return new Promise(function(resolve, reject) {
     resolve();
   });

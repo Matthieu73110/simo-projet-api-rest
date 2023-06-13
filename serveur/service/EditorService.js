@@ -17,10 +17,10 @@ exports.editorsGET = function(page) {
 /**
  * Delete one supported editor
  *
- * name String 
+ * id_editor String 
  * no response value expected for this operation
  **/
-exports.editorsNameDELETE = function(name) {
+exports.editorsId_editorDELETE = function(id_editor) {
   return new Promise(function(resolve, reject) {
     resolve();
   });
@@ -30,10 +30,10 @@ exports.editorsNameDELETE = function(name) {
 /**
  * Get one editor
  *
- * name String an editor if found
+ * id_editor Integer an editor if found
  * no response value expected for this operation
  **/
-exports.editorsNameGET = function(name) {
+exports.editorsId_editorGET = function(id_editor) {
   return new Promise(function(resolve, reject) {
     resolve();
   });
@@ -43,10 +43,10 @@ exports.editorsNameGET = function(name) {
 /**
  * Get all games by editor
  *
- * name String an editor if found
+ * id_editor Integer an editor if found
  * no response value expected for this operation
  **/
-exports.editorsNameGamesGET = function(name) {
+exports.editorsId_editorGamesGET = function(id_editor) {
   return new Promise(function(resolve, reject) {
     resolve();
   });

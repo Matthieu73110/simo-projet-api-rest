@@ -1,3 +1,5 @@
+'use strict';
+
 const DeveloperData = require('./data/developers.json');
 const GameData = require('./data/games.json');
 const EditorData = require('./data/editors.json');

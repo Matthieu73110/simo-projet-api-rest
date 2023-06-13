@@ -13,8 +13,8 @@ module.exports.developersGET = function developersGET (req, res, next, page) {
     });
 };
 
-module.exports.developersNameDELETE = function developersNameDELETE (req, res, next, name) {
-  Developer.developersNameDELETE(name)
+module.exports.developersId_developerDELETE = function developersId_developerDELETE (req, res, next, id_developer) {
+  Developer.developersId_developerDELETE(id_developer)
     .then(function (response) {
       utils.writeJson(res, response);
     })
@@ -23,8 +23,8 @@ module.exports.developersNameDELETE = function developersNameDELETE (req, res, n
     });
 };
 
-module.exports.developersNameGET = function developersNameGET (req, res, next, name) {
-  Developer.developersNameGET(name)
+module.exports.developersId_developerGET = function developersId_developerGET (req, res, next, id_developer) {
+  Developer.developersId_developerGET(id_developer)
     .then(function (response) {
       utils.writeJson(res, response);
     })
@@ -33,8 +33,8 @@ module.exports.developersNameGET = function developersNameGET (req, res, next, n
     });
 };
 
-module.exports.developersNameGamesGET = function developersNameGamesGET (req, res, next, name) {
-  Developer.developersNameGamesGET(name)
+module.exports.developersId_developerGamesGET = function developersId_developerGamesGET (req, res, next, id_developer) {
+  Developer.developersId_developerGamesGET(id_developer)
     .then(function (response) {
       utils.writeJson(res, response);
     })
