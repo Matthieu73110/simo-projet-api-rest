@@ -1,4 +1,4 @@
 serveur/node_modules/*
 serveur/.swagger-codegen/*
 package-lock.json
-
+.swagger-codegen-ignore
