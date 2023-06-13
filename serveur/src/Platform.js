@@ -28,6 +28,8 @@ class Platform {
             return false;
         }
 
+        game = this.getGameById(id_game);
+
         if (body.name != null){
             game.name = body.name;
         }
