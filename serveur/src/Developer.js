@@ -1,5 +1,3 @@
-const data = require('./data/developers.json');
-
 class Developer {
     constructor(data={}) {
         this.id = data.id;

@@ -13,7 +13,7 @@ class Gender{
         return this.games;
     }
 
-    getGame(id){
+    getGameById(id){
         return this.games.find(game => game.id === id);
     }
 }
