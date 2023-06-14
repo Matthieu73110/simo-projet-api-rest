@@ -21,3 +21,5 @@ class Editor {
         return this.games.find(game => game.id === id);
     }
 }
+
+module.exports = Editor;

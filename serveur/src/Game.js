@@ -45,3 +45,5 @@ class Game {
         developer.addGames(this);
     }
 }
+
+module.exports = Game;

@@ -23,7 +23,7 @@ class Platform {
     }
 
     // Modify the game associed plateform
-    modifyGame(body, id_game){
+    modifyGameByPlatform(body, id_game){
         if (!this.games.includes(id_game)){
             return false;
         }
@@ -56,9 +56,6 @@ class Platform {
     deleteGames(){
         this.games = [];
     }
-
-    modifyGameByPlatform(body, id_game){
-
-
-    }
 }
+
+module.exports = Platform;

@@ -6,11 +6,11 @@ const EditorData = require('./data/editors.json');
 const GenderData = require('./data/Gender.json');
 const PlatformData = require('./data/Platform.json');
 
-const Developer = require('./src/Developer.js');
-const Game = require('./src/Developer.js');
-const Editor = require('./src/Developer.js');
-const Gender = require('./src/Developer.js');
-const Platform = require('./src/Developer.js');
+const Developer = require('./src/Developer');
+const Game = require('./src/Developer');
+const Editor = require('./src/Developer');
+const Gender = require('./src/Developer');
+const Platform = require('./src/Developer');
 
 const init = function () {
   const catalogue = new Catalogue();
@@ -63,6 +63,26 @@ const init = function () {
 
   return catalogue;
 };
+
+function getGames(){
+  return catalogue[1];
+}
+
+function getDeveloppers(){
+  return catalogue[0];
+}
+
+function getEditors(){
+  return catalogue[2];
+}
+
+function getGenders(){
+  return catalogue[3];
+}
+
+function getPlatforms(){
+  return catalogue[4];
+}
 
 module.exports = init;
 

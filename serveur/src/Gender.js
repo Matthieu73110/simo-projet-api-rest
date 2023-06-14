@@ -19,3 +19,5 @@ class Gender{
         return this.games.find(game => game.id === id);
     }
 }
+
+module.exports = Gender;

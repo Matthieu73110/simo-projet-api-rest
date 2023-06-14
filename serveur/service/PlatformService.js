@@ -1,6 +1,8 @@
 'use strict';
 
 
+require("init")
+
 /**
  * List all supported platforms
  *
@@ -9,7 +11,7 @@
  **/
 exports.platformsGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(init.getPlatforms());
   });
 }
 
