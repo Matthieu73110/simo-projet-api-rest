@@ -3,7 +3,7 @@
 const DeveloperData = require('./data/developers.json');
 const GameData = require('./data/games.json');
 const EditorData = require('./data/editors.json');
-const GenderData = require('./data/Gender.json');
+const GenderData = require('./data/genders.json');
 const PlatformData = require('./data/Platform.json');
 
 const Developer = require('./src/Developer');
@@ -61,6 +61,8 @@ const init = function () {
   catalogue.push(genders);
   catalogue.push(platforms);
 
+  console.log(catalogue);
+
   return catalogue;
 };
 
@@ -81,7 +83,7 @@ function getGenders(){
 }
 
 function getPlatforms(){
-  return catalogue[4];
+  return catalogue[4  ];
 }
 
 module.exports = init;

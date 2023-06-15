@@ -1,7 +1,7 @@
 'use strict';
 
 
-require("init")
+const init = require("init")
 
 /**
  * List all supported platforms
@@ -11,7 +11,9 @@ require("init")
  **/
 exports.platformsGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve(init.getPlatforms());
+    //afficher la liste des plateformes qui se trouvent dans le fichier init.js
+    console.log(init);
+    resolve();
   });
 }
 
