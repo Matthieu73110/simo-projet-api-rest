@@ -1,6 +1,5 @@
 'use strict';
 
-const model = require('../init.js') 
 
 /**
  * List all supported platforms
@@ -10,9 +9,7 @@ const model = require('../init.js')
  **/
 exports.platformsGET = function(page) {
   return new Promise(function(resolve, reject) {
-    //afficher la liste des plateformes qui se trouvent dans le fichier init.js
-    console.log(model);
-    resolve();
+    resolve(require("../data/platforms.json"));
   });
 }
 

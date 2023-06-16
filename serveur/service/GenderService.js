@@ -9,7 +9,7 @@
  **/
 exports.gendersGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(require("../data/genders.json"));
   });
 }
 

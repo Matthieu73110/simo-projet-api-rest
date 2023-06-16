@@ -9,7 +9,7 @@
  **/
 exports.developersGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(require("../data/developers.json"));
   });
 }
 

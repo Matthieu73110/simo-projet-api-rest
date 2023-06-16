@@ -1,5 +1,7 @@
 'use strict';
 
+const data = require("../data/editors.json");
+
 
 /**
  * List all editors
@@ -9,7 +11,7 @@
  **/
 exports.editorsGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data);
   });
 }
 
@@ -35,7 +37,7 @@ exports.editorsId_editorDELETE = function(id_editor) {
  **/
 exports.editorsId_editorGET = function(id_editor) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_editor-1]);
   });
 }
 
