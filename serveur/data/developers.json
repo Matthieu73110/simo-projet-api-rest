@@ -10,38 +10,83 @@
   },
   {
     "id": 2,
-    "name": "Ubisoft"
+    "name": "Ubisoft",
+    "games" : [
+      {
+        "id": 2
+      }
+    ]
   },
   {
     "id": 3,
-    "name": "Rockstar Games"
+    "name": "Rockstar Games",
+    "games" : [
+      {
+        "id": 3
+      }
+    ]
   },
   {
     "id": 4,
-    "name": "Naughty Dog"
+    "name": "Naughty Dog",
+    "games" : [
+      {
+        "id": 4
+      }
+    ]
   },
   {
     "id": 5,
-    "name": "Nintendo"
+    "name": "Nintendo",
+    "games" : [
+      {
+        "id": 5
+      }
+    ]
   },
   {
     "id": 6,
-    "name": "Square Enix"
+    "name": "Square Enix",
+    "games" : [
+      {
+        "id": 6
+      }
+    ]
   },
   {
     "id": 7,
-    "name": "Activision Blizzard"
+    "name": "Activision Blizzard",
+    "games" : [
+      {
+        "id": 7
+      }
+    ]
   },
   {
     "id": 8,
-    "name": "CD Projekt Red"
+    "name": "CD Projekt Red",
+    "games" : [
+      {
+        "id": 8
+      }
+    ]
   },
   {
     "id": 9,
-    "name": "Epic Games"
+    "name": "Epic Games",
+    "games" : [
+      {
+        "id": 9
+      }
+    ]
   },
   {
     "id": 10,
-    "name": "Bethesda Game Studios"
+    "name": "Bethesda Game Studios",
+    "games" : [
+      {
+        "id": 10
+      }
+    ]
   }
 ]

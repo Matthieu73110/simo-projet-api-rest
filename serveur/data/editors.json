@@ -14,54 +14,99 @@
     "id": 2,
     "name": "Éditions Martin",
     "address": "456 Avenue des Roses, Lyon",
-    "acronym": "EDM"
+    "acronym": "EDM",
+    "games": [
+      {
+        "id": 2
+      }
+    ]
   },
   {
     "id": 3,
     "name": "Éditions Tremblay",
     "address": "789 Boulevard du Nord, Montréal",
-    "acronym": "EDT"
+    "acronym": "EDT",
+    "games": [
+      {
+        "id": 3
+      }
+    ]
   },
   {
     "id": 4,
     "name": "Éditions Leroy",
     "address": "1010 Rue Principale, Marseille",
-    "acronym": "EDL"
+    "acronym": "EDL",
+    "games": [
+      {
+        "id": 4
+      }
+    ]
   },
   {
     "id": 5,
     "name": "Éditions Dubois",
     "address": "111 Rue de la Liberté, Bordeaux",
-    "acronym": "EDB"
+    "acronym": "EDB",
+    "games": [
+      {
+        "id": 5
+      }
+    ]
   },
   {
     "id": 6,
     "name": "Éditions Rousseau",
     "address": "222 Avenue du Soleil, Genève",
-    "acronym": "EDR"
+    "acronym": "EDR",
+    "games": [
+      {
+        "id": 6
+      }
+    ]
   },
   {
     "id": 7,
     "name": "Éditions Lefebvre",
     "address": "333 Rue de la Paix, Bruxelles",
-    "acronym": "EDL"
+    "acronym": "EDL",
+    "games": [
+      {
+        "id": 7
+      }
+    ]
   },
   {
     "id": 8,
     "name": "Éditions Moreau",
     "address": "444 Boulevard des Arts, Nice",
-    "acronym": "EDM"
+    "acronym": "EDM",
+    "games": [
+      {
+        "id": 8
+      }
+    ]
   },
   {
     "id": 9,
     "name": "Éditions Simon",
     "address": "555 Rue Principale, Québec",
-    "acronym": "EDS"
+    "acronym": "EDS",
+    "games": [
+      {
+        "id": 9
+      }
+    ]
   },
   {
     "id": 10,
     "name": "Éditions Gagnon",
     "address": "666 Avenue du Ruisseau, Montréal",
-    "acronym": "EDG"
+    "acronym": "EDG",
+    "games": [
+      {
+        "id": 10
+      }
+    ]
   }
 ]
