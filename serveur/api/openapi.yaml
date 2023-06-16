@@ -42,56 +42,11 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
         "404":
-          description: Platform not found
-      x-swagger-router-controller: Platform
-    post:
-      tags:
-      - platform
-      summary: Create a new platform
-      operationId: platformsId_platformPOST
-      parameters:
-      - name: id_platform
-        in: path
-        description: name platform
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/platforms_id_platform_body'
-        required: true
-      responses:
-        "200":
-          description: A new platform has been created
-        "400":
-          description: The platform already exist
-      x-swagger-router-controller: Platform
-    delete:
-      tags:
-      - platform
-      summary: Delete one supported plateform
-      operationId: platformsId_platformDELETE
-      parameters:
-      - name: id_platform
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-      responses:
-        "200":
-          description: Successful operation
-        "400":
           description: Platform not found
       x-swagger-router-controller: Platform
   /platforms/{id_platform}/games:
@@ -108,7 +63,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
@@ -116,11 +71,11 @@ paths:
           description: Platform not found
       x-swagger-router-controller: Platform
   /platforms/{id_platform}/games/{id_game}:
-    put:
+    get:
       tags:
       - platform
-      summary: Modify a game by platform
-      operationId: platformsId_platformGamesId_gamePUT
+      summary: Get one game by platform
+      operationId: platformsId_platformGamesId_gameGET
       parameters:
       - name: id_platform
         in: path
@@ -129,7 +84,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
+          type: string
       - name: id_game
         in: path
         description: a game if found
@@ -137,13 +92,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/games_id_game_body'
-        required: true
+          type: string
       responses:
         "200":
           description: Successful operation
@@ -169,23 +118,6 @@ paths:
         "200":
           description: Successful operation
       x-swagger-router-controller: Gender
-    post:
-      tags:
-      - gender
-      summary: Create a new gender
-      operationId: gendersPOST
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/genders_body'
-        required: true
-      responses:
-        "200":
-          description: A new gender has been created
-        "400":
-          description: The gender already exist
-      x-swagger-router-controller: Gender
   /genders/{id_gender}:
     get:
       tags:
@@ -200,26 +132,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
-      responses:
-        "200":
-          description: Successful operation
-        "400":
-          description: Gender not found
-      x-swagger-router-controller: Gender
-    delete:
-      tags:
-      - gender
-      summary: Delete one supported gender
-      operationId: gendersId_genderDELETE
-      parameters:
-      - name: id_gender
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
@@ -240,7 +153,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
@@ -266,23 +179,6 @@ paths:
         "200":
           description: Successful operation
       x-swagger-router-controller: Editor
-    post:
-      tags:
-      - editor
-      summary: Create a new editor
-      operationId: editorsPOST
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/editors_body'
-        required: true
-      responses:
-        "200":
-          description: A new platform has been created
-        "400":
-          description: The editor already exist
-      x-swagger-router-controller: Editor
   /editors/{id_editor}:
     get:
       tags:
@@ -297,29 +193,12 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
         "400":
           description: Editor not found
-      x-swagger-router-controller: Editor
-    delete:
-      tags:
-      - editor
-      summary: Delete one supported editor
-      operationId: editorsId_editorDELETE
-      parameters:
-      - name: id_editor
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-      responses:
-        "200":
-          description: Successful operation
       x-swagger-router-controller: Editor
   /editors/{id_editor}/games:
     get:
@@ -335,7 +214,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
@@ -356,33 +235,16 @@ paths:
         style: form
         explode: true
         schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
-      x-swagger-router-controller: Developer
-    post:
-      tags:
-      - developer
-      summary: Create a new developer
-      operationId: developersPOST
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/developers_body'
-        required: true
-      responses:
-        "200":
-          description: A new platform has been created
-        "400":
-          description: The developer already exist
       x-swagger-router-controller: Developer
   /developers/{id_developer}:
     get:
       tags:
       - developer
-      summary: Get one editor
+      summary: Get one developer
       operationId: developersId_developerGET
       parameters:
       - name: id_developer
@@ -392,26 +254,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
-      responses:
-        "200":
-          description: Successful operation
-        "400":
-          description: Developer not found
-      x-swagger-router-controller: Developer
-    delete:
-      tags:
-      - developer
-      summary: Delete one supported developer
-      operationId: developersId_developerDELETE
-      parameters:
-      - name: id_developer
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
@@ -432,7 +275,7 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
@@ -458,28 +301,11 @@ paths:
         "200":
           description: Successful operation
       x-swagger-router-controller: Game
-    post:
-      tags:
-      - game
-      summary: Create a new game
-      operationId: gamesPOST
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/games_body'
-        required: true
-      responses:
-        "200":
-          description: A new platform has been created
-        "400":
-          description: The game already exist
-      x-swagger-router-controller: Game
   /games/{id_game}:
     get:
       tags:
       - game
-      summary: Get one editor
+      summary: Get one game
       operationId: gamesId_gameGET
       parameters:
       - name: id_game
@@ -489,61 +315,11 @@ paths:
         style: simple
         explode: false
         schema:
-          type: integer
+          type: string
       responses:
         "200":
           description: Successful operation
         "400":
           description: Game not found
       x-swagger-router-controller: Game
-    delete:
-      tags:
-      - game
-      summary: Delete one supported game
-      operationId: gamesId_gameDELETE
-      parameters:
-      - name: id_game
-        in: path
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: integer
-      responses:
-        "200":
-          description: Successful operation
-        "400":
-          description: Delete not possible beacouse id_game not exist
-      x-swagger-router-controller: Game
-components:
-  schemas:
-    platforms_id_platform_body:
-      type: object
-      properties:
-        name:
-          type: string
-    games_id_game_body:
-      type: object
-      properties:
-        name:
-          type: string
-    genders_body:
-      type: object
-      properties:
-        name:
-          type: string
-    editors_body:
-      type: object
-      properties:
-        name:
-          type: string
-    developers_body:
-      type: object
-      properties:
-        name:
-          type: string
-    games_body:
-      type: object
-      properties:
-        name:
-          type: string
+components: {}
