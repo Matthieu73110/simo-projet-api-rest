@@ -50,7 +50,7 @@ exports.editorsId_editorGET = function(id_editor) {
  **/
 exports.editorsId_editorGamesGET = function(id_editor) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_editor-1].games);
   });
 }
 
