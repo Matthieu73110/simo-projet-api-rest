@@ -49,8 +49,12 @@ exports.platformsId_platformGamesGET = function(id_platform) {
  * no response value expected for this operation
  **/
 exports.platformsId_platformGamesId_gameGET = function(id_platform,id_game) {
-  return new Promise(function(resolve, reject) {
-    resolve(data[id_platform-1].games[id_game-1]);
-  });
+  for(let i = 0; i < data[id_platform-1].games.length; i++){
+    if(data[id_platform-1].games[i].id == id_game){
+      return new Promise(function(resolve, reject) {
+        resolve(data[id_platform-1].games[i]);
+      });
+    }
+  }
 }
 
