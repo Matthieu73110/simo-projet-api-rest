@@ -2,9 +2,38 @@
   {
     "id": 1,
     "name": "PlayStation 5",
-    "games":[
+    "games": [
       {
-        "id": 1
+        "id": 1,
+        "name": "The Witcher 3: Wild Hunt",
+        "price": 49.99,
+        "release_date": "2015-05-19",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 1,
+            "name": "Electronic Arts"
+          }
+        ],
+        "editor": [
+          {
+            "id": 1,
+            "name": "Éditions Dupont",
+            "address": "123 Rue Principale, Paris",
+            "acronym": "EDD"
+          }
+        ],
+        "genders": [
+          {
+            "id": 1,
+            "name": "Action"
+          },
+          {
+            "id": 5,
+            "name": "Stratégie"
+          }
+        ]
       },
       {
         "id": 6
@@ -17,27 +46,114 @@
   {
     "id": 2,
     "name": "Xbox Series X",
-    "games":[
+    "games": [
       {
-        "id": 2
+        "id": 2,
+    "name": "Grand Theft Auto V",
+    "price": 59.99,
+    "release_date": "2013-09-17",
+    "sell_nb": 110000000,
+    "rates": 9.0,
+    "developer": [
+      {
+        "id": 2,
+        "name": "Ubisoft"
+      }
+    ],
+    "editor": [
+      {
+        "id": 2,
+        "name": "Éditions Martin",
+        "address": "456 Avenue des Roses, Lyon",
+        "acronym": "EDM"
+      }
+    ],
+    "genders": [
+      {
+        "id": 2,
+        "name": "Aventure"
+      },
+      {
+        "id": 7,
+        "name": "Course"
+      }
+    ]
       }
     ]
   },
   {
     "id": 3,
     "name": "Nintendo Switch",
-    "games":[
+    "games": [
       {
-        "id": 2
+        "id": 2,
+    "name": "Grand Theft Auto V",
+    "price": 59.99,
+    "release_date": "2013-09-17",
+    "sell_nb": 110000000,
+    "rates": 9.0,
+    "developer": [
+      {
+        "id": 2,
+        "name": "Ubisoft"
+      }
+    ],
+    "editor": [
+      {
+        "id": 2,
+        "name": "Éditions Martin",
+        "address": "456 Avenue des Roses, Lyon",
+        "acronym": "EDM"
+      }
+    ],
+    "genders": [
+      {
+        "id": 2,
+        "name": "Aventure"
+      },
+      {
+        "id": 7,
+        "name": "Course"
+      }
+    ]
       }
     ]
   },
   {
     "id": 4,
     "name": "PC",
-    "games":[
+    "games": [
       {
-        "id": 2
+        "id": 2,
+        "name": "Grand Theft Auto V",
+        "price": 59.99,
+        "release_date": "2013-09-17",
+        "sell_nb": 110000000,
+        "rates": 9.0,
+        "developer": [
+          {
+            "id": 2,
+            "name": "Ubisoft"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 2,
+            "name": "Aventure"
+          },
+          {
+            "id": 7,
+            "name": "Course"
+          }
+        ]
       },
       {
         "id": 4
@@ -53,9 +169,38 @@
   {
     "id": 5,
     "name": "PlayStation 4",
-    "games":[
+    "games": [
       {
-        "id": 1
+        "id": 1,
+        "name": "The Witcher 3: Wild Hunt",
+        "price": 49.99,
+        "release_date": "2015-05-19",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 1,
+            "name": "Electronic Arts"
+          }
+        ],
+        "editor": [
+          {
+            "id": 1,
+            "name": "Éditions Dupont",
+            "address": "123 Rue Principale, Paris",
+            "acronym": "EDD"
+          }
+        ],
+        "genders": [
+          {
+            "id": 1,
+            "name": "Action"
+          },
+          {
+            "id": 5,
+            "name": "Stratégie"
+          }
+        ]
       },
       {
         "id": 4
@@ -68,9 +213,38 @@
   {
     "id": 6,
     "name": "Xbox One",
-    "games":[
+    "games": [
       {
-        "id": 1
+        "id": 1,
+    "name": "The Witcher 3: Wild Hunt",
+    "price": 49.99,
+    "release_date": "2015-05-19",
+    "sell_nb": 10000000,
+    "rates": 9.5,
+    "developer": [
+      {
+        "id": 1,
+        "name": "Electronic Arts"
+      }
+    ],
+    "editor": [
+      {
+        "id": 1,
+        "name": "Éditions Dupont",
+        "address": "123 Rue Principale, Paris",
+        "acronym": "EDD"
+      }
+    ],
+    "genders": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 5,
+        "name": "Stratégie"
+      }
+    ]
       },
       {
         "id": 6
@@ -80,7 +254,7 @@
   {
     "id": 7,
     "name": "Nintendo 3DS",
-    "games":[
+    "games": [
       {
         "id": 3
       },
@@ -101,7 +275,7 @@
   {
     "id": 8,
     "name": "iOS",
-    "games":[
+    "games": [
       {
         "id": 3
       }
@@ -110,7 +284,7 @@
   {
     "id": 9,
     "name": "Android",
-    "games":[
+    "games": [
       {
         "id": 4
       },
@@ -125,7 +299,7 @@
   {
     "id": 10,
     "name": "Mac",
-    "games":[
+    "games": [
       {
         "id": 3
       },

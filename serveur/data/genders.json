@@ -2,9 +2,42 @@
   {
     "id": 1,
     "name": "Action",
-    "games":[
+    "games": [
       {
-        "id": 1
+        "id": 1,
+        "name": "The Witcher 3: Wild Hunt",
+        "price": 49.99,
+        "release_date": "2015-05-19",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 1,
+            "name": "Electronic Arts"
+          }
+        ],
+        "editor": [
+          {
+            "id": 1,
+            "name": "Éditions Dupont",
+            "address": "123 Rue Principale, Paris",
+            "acronym": "EDD"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 1,
+            "name": "PlayStation 5"
+          },
+          {
+            "id": 5,
+            "name": "PlayStation 4"
+          },
+          {
+            "id": 6,
+            "name": "Xbox One"
+          }
+        ]
       },
       {
         "id": 5
@@ -17,9 +50,42 @@
   {
     "id": 2,
     "name": "Aventure",
-    "games":[
+    "games": [
       {
-        "id": 2
+        "id": 2,
+    "name": "Grand Theft Auto V",
+    "price": 59.99,
+    "release_date": "2013-09-17",
+    "sell_nb": 110000000,
+    "rates": 9.0,
+    "developer": [
+      {
+        "id": 2,
+        "name": "Ubisoft"
+      }
+    ],
+    "editor": [
+      {
+        "id": 2,
+        "name": "Éditions Martin",
+        "address": "456 Avenue des Roses, Lyon",
+        "acronym": "EDM"
+      }
+    ],
+    "platforms": [
+      {
+        "id": 2,
+        "name": "Xbox Series X"
+      },
+      {
+        "id": 3,
+        "name": "Nintendo Switch"
+      },
+      {
+        "id": 4,
+        "name": "PC"
+      }
+    ]
       },
       {
         "id": 7
@@ -29,9 +95,42 @@
   {
     "id": 3,
     "name": "RPG (jeu de rôle)",
-    "games":[
+    "games": [
       {
-        "id": 3
+        "id": 3,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "price": 59.99,
+    "release_date": "2017-03-03",
+    "sell_nb": 20000000,
+    "rates": 9.7,
+    "developer": [
+      {
+        "id": 3,
+        "name": "Rockstar Games"
+      }
+    ],
+    "editor": [
+      {
+        "id": 3,
+        "name": "Éditions Tremblay",
+        "address": "789 Boulevard du Nord, Montréal",
+        "acronym": "EDT"
+      }
+    ],
+    "platforms": [
+      {
+        "id": 7,
+        "name": "Nintendo 3DS"
+      },
+      {
+        "id": 8,
+        "name": "iOS"
+      },
+      {
+        "id": 10,
+        "name": "Mac"
+      }
+    ]
       },
       {
         "id": 5
@@ -41,7 +140,7 @@
   {
     "id": 4,
     "name": "FPS (tir à la première personne)",
-    "games":[
+    "games": [
       {
         "id": 4
       }
@@ -50,9 +149,42 @@
   {
     "id": 5,
     "name": "Stratégie",
-    "games":[
+    "games": [
       {
-        "id": 1
+        "id": 1,
+        "name": "The Witcher 3: Wild Hunt",
+        "price": 49.99,
+        "release_date": "2015-05-19",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 1,
+            "name": "Electronic Arts"
+          }
+        ],
+        "editor": [
+          {
+            "id": 1,
+            "name": "Éditions Dupont",
+            "address": "123 Rue Principale, Paris",
+            "acronym": "EDD"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 1,
+            "name": "PlayStation 5"
+          },
+          {
+            "id": 5,
+            "name": "PlayStation 4"
+          },
+          {
+            "id": 6,
+            "name": "Xbox One"
+          }
+        ]
       },
       {
         "id": 8
@@ -62,7 +194,7 @@
   {
     "id": 6,
     "name": "Sport",
-    "games":[
+    "games": [
       {
         "id": 4
       },
@@ -74,9 +206,42 @@
   {
     "id": 7,
     "name": "Course",
-    "games":[
+    "games": [
       {
-        "id": 2
+        "id": 2,
+    "name": "Grand Theft Auto V",
+    "price": 59.99,
+    "release_date": "2013-09-17",
+    "sell_nb": 110000000,
+    "rates": 9.0,
+    "developer": [
+      {
+        "id": 2,
+        "name": "Ubisoft"
+      }
+    ],
+    "editor": [
+      {
+        "id": 2,
+        "name": "Éditions Martin",
+        "address": "456 Avenue des Roses, Lyon",
+        "acronym": "EDM"
+      }
+    ],
+    "platforms": [
+      {
+        "id": 2,
+        "name": "Xbox Series X"
+      },
+      {
+        "id": 3,
+        "name": "Nintendo Switch"
+      },
+      {
+        "id": 4,
+        "name": "PC"
+      }
+    ]
       },
       {
         "id": 6
@@ -89,7 +254,7 @@
   {
     "id": 8,
     "name": "Simulation",
-    "games":[
+    "games": [
       {
         "id": 10
       }
@@ -98,7 +263,7 @@
   {
     "id": 9,
     "name": "Puzzle",
-    "games":[
+    "games": [
       {
         "id": 10
       }
@@ -107,9 +272,42 @@
   {
     "id": 10,
     "name": "Horreur",
-    "games":[
+    "games": [
       {
-        "id": 3
+        "id": 3,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "price": 59.99,
+    "release_date": "2017-03-03",
+    "sell_nb": 20000000,
+    "rates": 9.7,
+    "developer": [
+      {
+        "id": 3,
+        "name": "Rockstar Games"
+      }
+    ],
+    "editor": [
+      {
+        "id": 3,
+        "name": "Éditions Tremblay",
+        "address": "789 Boulevard du Nord, Montréal",
+        "acronym": "EDT"
+      }
+    ],
+    "platforms": [
+      {
+        "id": 7,
+        "name": "Nintendo 3DS"
+      },
+      {
+        "id": 8,
+        "name": "iOS"
+      },
+      {
+        "id": 10,
+        "name": "Mac"
+      }
+    ]
       },
       {
         "id": 8
@@ -120,4 +318,3 @@
     ]
   }
 ]
-

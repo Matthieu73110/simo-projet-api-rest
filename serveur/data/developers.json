@@ -2,34 +2,145 @@
   {
     "id": 1,
     "name": "Electronic Arts",
-    "games" : [
+    "games": [
       {
-        "id": 1
+        "id": 1,
+        "name": "The Witcher 3: Wild Hunt",
+        "price": 49.99,
+        "release_date": "2015-05-19",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "editor": [
+          {
+            "id": 1,
+            "name": "Éditions Dupont",
+            "address": "123 Rue Principale, Paris",
+            "acronym": "EDD"
+          }
+        ],
+        "genders": [
+          {
+            "id": 1,
+            "name": "Action"
+          },
+          {
+            "id": 5,
+            "name": "Stratégie"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 1,
+            "name": "PlayStation 5"
+          },
+          {
+            "id": 5,
+            "name": "PlayStation 4"
+          },
+          {
+            "id": 6,
+            "name": "Xbox One"
+          }
+        ]
       }
     ]
   },
   {
     "id": 2,
     "name": "Ubisoft",
-    "games" : [
+    "games": [
       {
-        "id": 2
+        "id": 2,
+    "name": "Grand Theft Auto V",
+    "price": 59.99,
+    "release_date": "2013-09-17",
+    "sell_nb": 110000000,
+    "rates": 9.0,
+    "editor": [
+      {
+        "id": 2,
+        "name": "Éditions Martin",
+        "address": "456 Avenue des Roses, Lyon",
+        "acronym": "EDM"
+      }
+    ],
+    "genders": [
+      {
+        "id": 2,
+        "name": "Aventure"
+      },
+      {
+        "id": 7,
+        "name": "Course"
+      }
+    ],
+    "platforms": [
+      {
+        "id": 2,
+        "name": "Xbox Series X"
+      },
+      {
+        "id": 3,
+        "name": "Nintendo Switch"
+      },
+      {
+        "id": 4,
+        "name": "PC"
+      }
+    ]
       }
     ]
   },
   {
     "id": 3,
     "name": "Rockstar Games",
-    "games" : [
+    "games": [
       {
-        "id": 3
+        "id": 3,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "price": 59.99,
+    "release_date": "2017-03-03",
+    "sell_nb": 20000000,
+    "rates": 9.7,
+    "editor": [
+      {
+        "id": 3,
+        "name": "Éditions Tremblay",
+        "address": "789 Boulevard du Nord, Montréal",
+        "acronym": "EDT"
+      }
+    ],
+    "genders": [
+      {
+        "id": 3,
+        "name": "RPG (jeu de rôle)"
+      },
+      {
+        "id": 10,
+        "name": "Horreur"
+      }
+    ],
+    "platforms": [
+      {
+        "id": 7,
+        "name": "Nintendo 3DS"
+      },
+      {
+        "id": 8,
+        "name": "iOS"
+      },
+      {
+        "id": 10,
+        "name": "Mac"
+      }
+    ]
       }
     ]
   },
   {
     "id": 4,
     "name": "Naughty Dog",
-    "games" : [
+    "games": [
       {
         "id": 4
       }
@@ -38,7 +149,7 @@
   {
     "id": 5,
     "name": "Nintendo",
-    "games" : [
+    "games": [
       {
         "id": 5
       }
@@ -47,7 +158,7 @@
   {
     "id": 6,
     "name": "Square Enix",
-    "games" : [
+    "games": [
       {
         "id": 6
       }
@@ -56,7 +167,7 @@
   {
     "id": 7,
     "name": "Activision Blizzard",
-    "games" : [
+    "games": [
       {
         "id": 7
       }
@@ -65,7 +176,7 @@
   {
     "id": 8,
     "name": "CD Projekt Red",
-    "games" : [
+    "games": [
       {
         "id": 8
       }
@@ -74,7 +185,7 @@
   {
     "id": 9,
     "name": "Epic Games",
-    "games" : [
+    "games": [
       {
         "id": 9
       }
@@ -83,7 +194,7 @@
   {
     "id": 10,
     "name": "Bethesda Game Studios",
-    "games" : [
+    "games": [
       {
         "id": 10
       }

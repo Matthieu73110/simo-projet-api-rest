@@ -6,7 +6,42 @@
     "acronym": "EDD",
     "games": [
       {
-        "id": 1
+        "id": 1,
+        "name": "The Witcher 3: Wild Hunt",
+        "price": 49.99,
+        "release_date": "2015-05-19",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 1,
+            "name": "Electronic Arts"
+          }
+        ],
+        "genders": [
+          {
+            "id": 1,
+            "name": "Action"
+          },
+          {
+            "id": 5,
+            "name": "Stratégie"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 1,
+            "name": "PlayStation 5"
+          },
+          {
+            "id": 5,
+            "name": "PlayStation 4"
+          },
+          {
+            "id": 6,
+            "name": "Xbox One"
+          }
+        ]
       }
     ]
   },
@@ -17,7 +52,42 @@
     "acronym": "EDM",
     "games": [
       {
-        "id": 2
+        "id": 2,
+    "name": "Grand Theft Auto V",
+    "price": 59.99,
+    "release_date": "2013-09-17",
+    "sell_nb": 110000000,
+    "rates": 9.0,
+    "developer": [
+      {
+        "id": 2,
+        "name": "Ubisoft"
+      }
+    ],
+    "genders": [
+      {
+        "id": 2,
+        "name": "Aventure"
+      },
+      {
+        "id": 7,
+        "name": "Course"
+      }
+    ],
+    "platforms": [
+      {
+        "id": 2,
+        "name": "Xbox Series X"
+      },
+      {
+        "id": 3,
+        "name": "Nintendo Switch"
+      },
+      {
+        "id": 4,
+        "name": "PC"
+      }
+    ]
       }
     ]
   },
@@ -28,7 +98,42 @@
     "acronym": "EDT",
     "games": [
       {
-        "id": 3
+        "id": 3,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "price": 59.99,
+    "release_date": "2017-03-03",
+    "sell_nb": 20000000,
+    "rates": 9.7,
+    "developer": [
+      {
+        "id": 3,
+        "name": "Rockstar Games"
+      }
+    ],
+    "genders": [
+      {
+        "id": 3,
+        "name": "RPG (jeu de rôle)"
+      },
+      {
+        "id": 10,
+        "name": "Horreur"
+      }
+    ],
+    "platforms": [
+      {
+        "id": 7,
+        "name": "Nintendo 3DS"
+      },
+      {
+        "id": 8,
+        "name": "iOS"
+      },
+      {
+        "id": 10,
+        "name": "Mac"
+      }
+    ]
       }
     ]
   },
