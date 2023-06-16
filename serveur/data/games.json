@@ -457,6 +457,312 @@
         "name": "Nintendo 3DS"
       }
     ]
+  },
+  {
+    "id": 11,
+    "name": "Fallout 4",
+    "price": 29.99,
+    "release_date": "2015-11-10",
+    "sell_nb": 12000000,
+    "rates": 8.7,
+    "developer": [
+      {
+          "id": 1
+      }
+    ],
+    "editor": [
+      {
+          "id": 2
+      }
+    ],
+    "genders": [
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      },
+      {
+        "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "The Elder Scrolls V: Skyrim",
+    "price": 39.99,
+    "release_date": "2011-11-11",
+    "sell_nb": 30000000,
+    "rates": 9.3,
+    "developer": [
+      {
+          "id": 3
+      }
+    ],
+    "editor": [
+      {
+          "id": 2
+      }
+    ],
+    "genders": [
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      },
+      {
+        "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Uncharted 4: A Thief's End",
+    "price": 59.99,
+    "release_date": "2016-05-10",
+    "sell_nb": 15000000,
+    "rates": 9.7,
+    "developer": [
+      {
+          "id": 9
+      }
+    ],
+    "editor": [
+      {
+          "id": 5
+      }
+    ],
+    "genders": [
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      },
+      {
+        "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "The Last of Us Part II",
+    "price": 59.99,
+    "release_date": "2020-06-19",
+    "sell_nb": 10000000,
+    "rates": 9.5,
+    "developer": [
+      {
+          "id": 4
+      }
+    ],
+    "editor": [
+      {
+          "id": 2
+      }
+    ],
+    "genders": [
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      },
+      {
+        "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Horizon Zero Dawn",
+    "price": 49.99,
+    "release_date": "2017-02-28",
+    "sell_nb": 10000000,
+    "rates": 9.3,
+    "developer": [
+      {
+          "id": 7
+      }
+    ],
+    "editor": [
+      {
+          "id": 2
+      }
+    ],
+    "genders": [
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      },
+      {
+        "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Metal Gear Solid V: The Phantom Pain",
+    "price": 19.99,
+    "release_date": "2015-09-01",
+    "sell_nb": 6000000,
+    "rates": 9.0,
+    "developer": [
+      {
+          "id": 6
+      }
+    ],
+    "editor": [
+      {
+          "id": 4
+      }
+    ],
+    "genders": [
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      },
+      {
+        "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Bloodborne",
+    "price": 19.99,
+    "release_date": "2015-03-24",
+    "sell_nb": 3000000,
+    "rates": 9.4,
+    "developer": [
+      {
+          "id": 2
+      }
+    ],
+    "editor": [
+      {
+          "id": 2
+      }
+    ],
+    "genders": [
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      },
+      {
+        "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Dark Souls III",
+    "price": 59.99,
+    "release_date": "2016-03-24",
+    "sell_nb": 10000000,
+    "rates": 9.5,
+    "developer": [
+      {
+          "id": 8
+      }
+    ],
+    "editor": [
+      {
+          "id": 3
+      }
+    ],
+    "genders": [
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      },
+      {
+        "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Resident Evil 2 Remake",
+    "price": 39.99,
+    "release_date": "2019-01-25",
+    "sell_nb": 8000000,
+    "rates": 9,
+    "developer": [
+      {
+          "id": 4
+      }
+    ],
+    "editor": [
+      {
+          "id": 2
+      }
+    ],
+    "genders": [
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      },
+      {
+        "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      }
+    ]
   }
 ]
 
