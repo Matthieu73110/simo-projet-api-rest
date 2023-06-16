@@ -8,32 +8,40 @@
     "rates": 9.5,
     "developer": [
       {
-          "id": 1
+        "id": 1,
+        "name": "Electronic Arts"
       }
     ],
     "editor": [
       {
-          "id": 1
+        "name": "Éditions Dupont",
+        "address": "123 Rue Principale, Paris",
+        "acronym": "EDD"
       }
     ],
     "genders": [
       {
-          "id": 1
+        "id": 1,
+        "name": "Action"
       },
 
       {
-          "id": 5
+        "id": 5,
+        "name": "Stratégie"
       }
     ],
     "platforms": [
       {
-          "id": 1
+        "id": 1,
+        "name": "PlayStation 5"
       },
       {
-          "id": 5
+        "id": 5,
+        "name": "PlayStation 4"
       },
       {
-          "id": 6
+        "id": 6,
+        "name": "Xbox One"
       }
     ]
   },
@@ -46,32 +54,41 @@
     "rates": 9.0,
     "developer": [
       {
-          "id": 2
+        "id": 2,
+        "name": "Ubisoft"
       }
     ],
     "editor": [
       {
-          "id": 2
+        "id": 2,
+        "name": "Éditions Martin",
+        "address": "456 Avenue des Roses, Lyon",
+        "acronym": "EDM"
       }
     ],
     "genders": [
       {
-          "id": 2
+        "id": 2,
+        "name": "Aventure"
       },
 
       {
-          "id": 7
+        "id": 7,
+        "name": "Course"
       }
     ],
     "platforms": [
       {
-          "id": 2
+        "id": 2,
+        "name": "Xbox Series X"
       },
       {
-          "id": 3
+        "id": 3,
+        "name": "Nintendo Switch"
       },
       {
-          "id": 4
+        "id": 4,
+        "name": "PC"
       }
     ]
   },
@@ -84,32 +101,41 @@
     "rates": 9.7,
     "developer": [
       {
-          "id": 3
+        "id": 3,
+        "name": "Rockstar Games"
       }
     ],
     "editor": [
       {
-          "id": 3
+        "id": 3,
+        "name": "Éditions Tremblay",
+        "address": "789 Boulevard du Nord, Montréal",
+        "acronym": "EDT"
       }
     ],
     "genders": [
       {
-          "id": 3
+        "id": 3,
+        "name": "RPG (jeu de rôle)"
       },
 
       {
-          "id": 10
+        "id": 10,
+        "name": "Horreur"
       }
     ],
     "platforms": [
       {
-          "id": 7
+        "id": 7,
+        "name": "Nintendo 3DS"
       },
       {
-          "id": 8
+        "id": 8,
+        "name": "iOS"
       },
       {
-          "id": 10
+        "id": 10,
+        "name": "Mac"
       }
     ]
   },
@@ -122,32 +148,41 @@
     "rates": 9.0,
     "developer": [
       {
-          "id": 4
+        "id": 4,
+        "name": "Naughty Dog"
       }
     ],
     "editor": [
       {
-          "id": 4
+        "id": 4,
+        "name": "Éditions Leroy",
+        "address": "1010 Rue Principale, Marseille",
+        "acronym": "EDL"
       }
     ],
     "genders": [
       {
-          "id": 4
+        "id": 4,
+        "name": "FPS (tir à la première personne)"
       },
 
       {
-          "id": 6
+        "id": 6,
+        "name": "Sport"
       }
     ],
     "platforms": [
       {
-          "id": 4
+        "id": 4,
+        "name": "PC"
       },
       {
-          "id": 5
+        "id": 5,
+        "name": "PlayStation 4"
       },
       {
-          "id": 9
+        "id": 9,
+        "name": "Android"
       }
     ]
   },
@@ -160,35 +195,45 @@
     "rates": 9.2,
     "developer": [
       {
-          "id": 5
+        "id": 5,
+        "name": "Nintendo"
       }
     ],
     "editor": [
       {
-          "id": 5
+        "id": 5,
+        "name": "Éditions Dubois",
+        "address": "111 Rue de la Liberté, Bordeaux",
+        "acronym": "EDB"
       }
     ],
     "genders": [
       {
-          "id": 1
+        "id": 1,
+        "name": "Action"
       },
 
       {
-          "id": 3
+          "id": 3,
+          "name": "RPG (jeu de rôle)"
       }
     ],
     "platforms": [
       {
-        "id": 4
+        "id": 4,
+        "name": "PC"
       },
       {
-        "id": 7
+        "id": 7,
+        "name": "Nintendo 3DS"
       },
       {
-        "id": 8
+        "id": 8,
+        "name": "iOS"
       },
       {
-        "id": 9
+        "id": 9,
+        "name": "Android"
       }
     ]
   },
@@ -201,34 +246,44 @@
     "rates": 8.5,
     "developer": [
       {
-          "id": 6
+        "id": 6,
+        "name": "Square Enix"
       }
     ],
     "editor": [
       {
-          "id": 6
+        "id": 6,
+        "name": "Éditions Rousseau",
+        "address": "222 Avenue du Soleil, Genève",
+        "acronym": "EDR"
       }
     ],
     "genders": [
       {
-          "id": 7
+        "id": 7,
+        "name": "Course"
       }
     ],
     "platforms": [
       {
-        "id": 1
+        "id": 1,
+        "name": "PlayStation 5"
       },
       {
-        "id": 5
+        "id": 5,
+        "name": "PlayStation 4"
       },
       {
-        "id": 6
+        "id": 6,
+        "name": "Xbox One"
       },
       {
-        "id": 7
+        "id": 7,
+        "name": "Nintendo 3DS"
       },
       {
-        "id": 9
+        "id": 9,
+        "name": "Android"
       }
     ]
   },
@@ -241,26 +296,33 @@
     "rates": 8.8,
     "developer": [
       {
-          "id": 7
+        "id": 7,
+        "name": "Activision Blizzard"
       }
     ],
     "editor": [
       {
-          "id": 7
+        "id": 7,
+        "name": "Éditions Lefebvre",
+        "address": "333 Rue de la Paix, Bruxelles",
+        "acronym": "EDL"
       }
     ],
     "genders": [
       {
-          "id": 1
+        "id": 1,
+        "name": "Action"
       },
 
       {
-          "id": 2
+        "id": 2,
+        "name": "Aventure"
       }
     ],
     "platforms": [
       {
-          "id": 10
+        "id": 10,
+        "name": "Mac"
       }
     ]
   },
@@ -273,32 +335,41 @@
     "rates": 9.6,
     "developer": [
       {
-          "id": 8
+        "id": 8,
+        "name": "CD Projekt Red"
       }
     ],
     "editor": [
       {
-          "id": 8
+        "id": 8,
+        "name": "Éditions Moreau",
+        "address": "444 Boulevard des Arts, Nice",
+        "acronym": "EDM"
       }
     ],
     "genders": [
       {
-          "id": 5
+        "id": 5,
+        "name": "Stratégie"
       },
 
       {
-          "id": 10
+        "id": 10,
+        "name": "Horreur"
       }
     ],
     "platforms": [
       {
-          "id": 1
+        "id": 1,
+        "name": "PlayStation 5"
       },
       {
-          "id": 8
+        "id": 8,
+        "name": "iOS"
       },
       {
-          "id": 10
+        "id": 10,
+        "name": "Mac"
       }
     ]
   },
@@ -311,29 +382,37 @@
     "rates": 8.9,
     "developer": [
       {
-          "id": 9
+        "id": 9,
+        "name": "Epic Games"
       }
     ],
     "editor": [
       {
-          "id": 9
+        "id": 9,
+        "name": "Éditions Simon",
+        "address": "555 Rue Principale, Québec",
+        "acronym": "EDS"
       }
     ],
     "genders": [
       {
-          "id": 6
+        "id": 6,
+        "name": "Sport"
       },
 
       {
-          "id": 7
+        "id": 7,
+        "name": "Course"
       }
     ],
     "platforms": [
       {
-          "id": 4
+        "id": 4,
+        "name": "PC"
       },
       {
-          "id": 7
+        "id": 7,
+        "name": "Nintendo 3DS"
       }
     ]
   },
@@ -346,28 +425,36 @@
     "rates": 9.8,
     "developer": [
       {
-          "id": 10
+        "id": 10,
+        "name": "Bethesda Game Studios"
       }
     ],
     "editor": [
       {
-          "id": 10
+        "id": 10,
+        "name": "Éditions Gagnon",
+        "address": "666 Avenue du Ruisseau, Montréal",
+        "acronym": "EDG"
       }
     ],
     "genders": [
       {
-          "id": 8
+        "id": 8,
+        "name": "Simulation"
       },
       {
-        "id": 9
+        "id": 9,
+    "name": "Puzzle"
       },
       {
-        "id": 10
+        "id": 10,
+        "name": "Horreur"
       }
     ],
     "platforms": [
       {
-          "id": 7
+        "id": 7,
+        "name": "Nintendo 3DS"
       }
     ]
   }

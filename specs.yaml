@@ -23,28 +23,12 @@ paths:
       responses:
         200:
           description: "Successful operation"
-    post:
-        tags: [platform]
-        summary: "Create a new platform"
-        parameters:
-          - name: myPlatform
-            schema:
-              type: object
-              properties:
-                name:
-                  type: string
-            in: body
-        responses:
-          200:
-            description: A new platform has been created
-          400:
-            description: The platform already exist
-  /platforms/{name}:
+  /platforms/{id_platform}:
     get:
       tags: [platform]
       summary: "Get one supported platform"
       parameters:
-        - name: name
+        - name: id_platform
           schema:
             type: string
           in: path
@@ -55,26 +39,12 @@ paths:
           description: "Successful operation"
         404:
           description: "Platform not found"
-    delete:
-      tags: [platform]
-      summary: "Delete one supported plateform"
-      parameters:
-        - name: name
-          schema:
-            type: string
-          in: path
-          required: true
-      responses:
-        200:
-          description: "Successful operation"
-        400:
-          description: "Platform not found"
-  /platforms/{name}/games:
+  /platforms/{id_platform}/games:
     get:
       tags: [platform]
       summary: "Get all games by plateform"
       parameters:
-        - name: name
+        - name: id_platform
           schema:
             type: string
           in: path
@@ -85,18 +55,18 @@ paths:
           description: "Successful operation"
         400:
           description: "Platform not found"
-  /platforms/{name}/games/{game_name}:
-    put:
+  /platforms/{id_platform}/games/{id_game}:
+    get:
       tags: [platform]
-      summary: "Modify a game by platform"
+      summary: "Get one game by platform"
       parameters:
-        - name: name
+        - name: id_platform
           schema:
             type: string
           in: path
           description: a platform if found
           required: true
-        - name: game_name
+        - name: id_game
           schema:
             type: string
           in: path
@@ -121,28 +91,13 @@ paths:
       responses:
         200:
           description: "Successful operation"
-    post:
-        tags: [gender]
-        summary: "Create a new gender"
-        parameters:
-          - name: myGender
-            schema:
-              type: object
-              properties:
-                name:
-                  type: string
-            in: body
-        responses:
-          200:
-            description: A new gender has been created
-          400:
-              description: The gender already exist
-  /genders/{name}:
+
+  /genders/{id_gender}:
     get:
       tags: [gender]
       summary: "Get one gender"
       parameters:
-        - name: name
+        - name: id_gender
           schema:
             type: string
           in: path
@@ -153,26 +108,12 @@ paths:
           description: "Successful operation"
         400:
           description: "Gender not found"
-    delete:
-      tags: [gender]
-      summary: "Delete one supported gender"
-      parameters:
-        - name: name
-          schema:
-            type: string
-          in: path
-          required: true
-      responses:
-        200:
-          description: "Successful operation"
-        400:
-          description: "Gender not found"
-  /genders/{name}/games:
+  /genders/{id_gender}/games:
     get:
       tags: [gender]
       summary: "Get all games by gender"
       parameters:
-        - name: name
+        - name: id_gender
           schema:
             type: string
           in: path
@@ -197,28 +138,12 @@ paths:
       responses:
         200:
           description: "Successful operation"
-    post:
-        tags: [editor]
-        summary: "Create a new editor"
-        parameters:
-          - name: myEditor
-            schema:
-              type: object
-              properties:
-                name:
-                  type: string
-            in: body
-        responses:
-          200:
-            description: A new platform has been created
-          400:
-              description: The editor already exist
-  /editors/{name}:
+  /editors/{id_editor}:
     get:
       tags: [editor]
       summary: "Get one editor"
       parameters:
-        - name: name
+        - name: id_editor
           schema:
             type: string
           in: path
@@ -229,24 +154,12 @@ paths:
           description: "Successful operation"
         400:
           description: "Editor not found"
-    delete:
-      tags: [editor]
-      summary: "Delete one supported editor"
-      parameters:
-        - name: name
-          schema:
-            type: string
-          in: path
-          required: true
-      responses:
-        200:
-          description: "Successful operation"
-  /editors/{name}/games:
+  /editors/{id_editor}/games:
     get:
       tags: [editor]
       summary: "Get all games by editor"
       parameters:
-        - name: name
+        - name: id_editor
           schema:
             type: string
           in: path
@@ -271,28 +184,12 @@ paths:
       responses:
         200:
           description: "Successful operation"
-    post:
-        tags: [developer]
-        summary: "Create a new developer"
-        parameters:
-          - name: myDeveloper
-            schema:
-              type: object
-              properties:
-                name:
-                  type: string
-            in: body
-        responses:
-          200:
-            description: A new platform has been created
-          400:
-              description: The developer already exist
-  /developers/{name}:
+  /developers/{id_developer}:
     get:
       tags: [developer]
-      summary: "Get one editor"
+      summary: "Get one developer"
       parameters:
-        - name: name
+        - name: id_developer
           schema:
             type: string
           in: path
@@ -303,26 +200,12 @@ paths:
           description: "Successful operation"
         400:
           description: "Developer not found"
-    delete:
-      tags: [developer]
-      summary: "Delete one supported developer"
-      parameters:
-        - name: name
-          schema:
-            type: string
-          in: path
-          required: true
-      responses:
-        200:
-          description: "Successful operation"
-        400:
-          description: "Developer not found"
-  /developers/{name}/games:
+  /developers/{id_developer}/games:
     get:
       tags: [developer]
       summary: "Get all games by developer"
       parameters:
-        - name: name
+        - name: id_developer
           schema:
             type: string
           in: path
@@ -347,28 +230,12 @@ paths:
       responses:
         200:
           description: "Successful operation"
-    post:
-        tags: [game]
-        summary: "Create a new game"
-        parameters:
-          - name: myGame
-            schema:
-              type: object
-              properties:
-                name:
-                  type: string
-            in: body
-        responses:
-          200:
-            description: A new platform has been created
-          400:
-              description: The game already exist
-  /games/{name}:
+  /games/{id_game}:
     get:
       tags: [game]
-      summary: "Get one editor"
+      summary: "Get one game"
       parameters:
-        - name: name
+        - name: id_game
           schema:
             type: string
           in: path
@@ -379,15 +246,3 @@ paths:
           description: "Successful operation"
         400:
           description: "Game not found"
-    delete:
-      tags: [game]
-      summary: "Delete one supported game"
-      parameters:
-        - name: name
-          schema:
-            type: string
-          in: path
-          required: true
-      responses:
-        200:
-          description: "Successful operation"

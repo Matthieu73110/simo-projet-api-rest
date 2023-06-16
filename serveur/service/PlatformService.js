@@ -16,22 +16,9 @@ exports.platformsGET = function(page) {
 
 
 /**
- * Delete one supported plateform
- *
- * id_platform Integer 
- * no response value expected for this operation
- **/
-exports.platformsId_platformDELETE = function(id_platform) {
-  return new Promise(function(resolve, reject) {
-    resolve();
-  });
-}
-
-
-/**
  * Get one supported platform
  *
- * id_platform Integer a platform if found
+ * id_platform String a platform if found
  * no response value expected for this operation
  **/
 exports.platformsId_platformGET = function(id_platform) {
@@ -44,7 +31,7 @@ exports.platformsId_platformGET = function(id_platform) {
 /**
  * Get all games by plateform
  *
- * id_platform Integer a platform if found
+ * id_platform String a platform if found
  * no response value expected for this operation
  **/
 exports.platformsId_platformGamesGET = function(id_platform) {
@@ -55,30 +42,15 @@ exports.platformsId_platformGamesGET = function(id_platform) {
 
 
 /**
- * Modify a game by platform
+ * Get one game by platform
  *
- * body Games_id_game_body 
- * id_platform Integer a platform if found
- * id_game Integer a game if found
+ * id_platform String a platform if found
+ * id_game String a game if found
  * no response value expected for this operation
  **/
-exports.platformsId_platformGamesId_gamePUT = function(body,id_platform,id_game) {
+exports.platformsId_platformGamesId_gameGET = function(id_platform,id_game) {
   return new Promise(function(resolve, reject) {
-    resolve();
-  });
-}
-
-
-/**
- * Create a new platform
- *
- * body Platforms_id_platform_body 
- * id_platform Integer name platform
- * no response value expected for this operation
- **/
-exports.platformsId_platformPOST = function(body,id_platform) {
-  return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_platform-1].games[id_game-1]);
   });
 }
 

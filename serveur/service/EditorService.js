@@ -2,7 +2,6 @@
 
 const data = require("../data/editors.json");
 
-
 /**
  * List all editors
  *
@@ -17,27 +16,14 @@ exports.editorsGET = function(page) {
 
 
 /**
- * Delete one supported editor
- *
- * id_editor String 
- * no response value expected for this operation
- **/
-exports.editorsId_editorDELETE = function(id_editor) {
-  return new Promise(function(resolve, reject) {
-    resolve();
-  });
-}
-
-
-/**
  * Get one editor
  *
- * id_editor Integer an editor if found
+ * id_editor String an editor if found
  * no response value expected for this operation
  **/
 exports.editorsId_editorGET = function(id_editor) {
   return new Promise(function(resolve, reject) {
-    resolve(data[id_editor-1]);
+    resolve(data[id_editor]);
   });
 }
 
@@ -45,25 +31,12 @@ exports.editorsId_editorGET = function(id_editor) {
 /**
  * Get all games by editor
  *
- * id_editor Integer an editor if found
+ * id_editor String an editor if found
  * no response value expected for this operation
  **/
 exports.editorsId_editorGamesGET = function(id_editor) {
   return new Promise(function(resolve, reject) {
-    resolve(data[id_editor-1].games);
-  });
-}
-
-
-/**
- * Create a new editor
- *
- * body Editors_body 
- * no response value expected for this operation
- **/
-exports.editorsPOST = function(body) {
-  return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_editor].games);
   });
 }
 
