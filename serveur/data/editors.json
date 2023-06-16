@@ -53,41 +53,41 @@
     "games": [
       {
         "id": 2,
-    "name": "Grand Theft Auto V",
-    "price": 59.99,
-    "release_date": "2013-09-17",
-    "sell_nb": 110000000,
-    "rates": 9.0,
-    "developer": [
-      {
-        "id": 2,
-        "name": "Ubisoft"
-      }
-    ],
-    "genders": [
-      {
-        "id": 2,
-        "name": "Aventure"
-      },
-      {
-        "id": 7,
-        "name": "Course"
-      }
-    ],
-    "platforms": [
-      {
-        "id": 2,
-        "name": "Xbox Series X"
-      },
-      {
-        "id": 3,
-        "name": "Nintendo Switch"
-      },
-      {
-        "id": 4,
-        "name": "PC"
-      }
-    ]
+        "name": "Grand Theft Auto V",
+        "price": 59.99,
+        "release_date": "2013-09-17",
+        "sell_nb": 110000000,
+        "rates": 9.0,
+        "developer": [
+          {
+            "id": 2,
+            "name": "Ubisoft"
+          }
+        ],
+        "genders": [
+          {
+            "id": 2,
+            "name": "Aventure"
+          },
+          {
+            "id": 7,
+            "name": "Course"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 2,
+            "name": "Xbox Series X"
+          },
+          {
+            "id": 3,
+            "name": "Nintendo Switch"
+          },
+          {
+            "id": 4,
+            "name": "PC"
+          }
+        ]
       }
     ]
   },
@@ -99,41 +99,41 @@
     "games": [
       {
         "id": 3,
-    "name": "The Legend of Zelda: Breath of the Wild",
-    "price": 59.99,
-    "release_date": "2017-03-03",
-    "sell_nb": 20000000,
-    "rates": 9.7,
-    "developer": [
-      {
-        "id": 3,
-        "name": "Rockstar Games"
-      }
-    ],
-    "genders": [
-      {
-        "id": 3,
-        "name": "RPG (jeu de rôle)"
-      },
-      {
-        "id": 10,
-        "name": "Horreur"
-      }
-    ],
-    "platforms": [
-      {
-        "id": 7,
-        "name": "Nintendo 3DS"
-      },
-      {
-        "id": 8,
-        "name": "iOS"
-      },
-      {
-        "id": 10,
-        "name": "Mac"
-      }
-    ]
+        "name": "The Legend of Zelda: Breath of the Wild",
+        "price": 59.99,
+        "release_date": "2017-03-03",
+        "sell_nb": 20000000,
+        "rates": 9.7,
+        "developer": [
+          {
+            "id": 3,
+            "name": "Rockstar Games"
+          }
+        ],
+        "genders": [
+          {
+            "id": 3,
+            "name": "RPG (jeu de rôle)"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          },
+          {
+            "id": 8,
+            "name": "iOS"
+          },
+          {
+            "id": 10,
+            "name": "Mac"
+          }
+        ]
       }
     ]
   },
@@ -144,7 +144,42 @@
     "acronym": "EDL",
     "games": [
       {
-        "id": 4
+        "id": 4,
+        "name": "Overwatch",
+        "price": 39.99,
+        "release_date": "2016-05-24",
+        "sell_nb": 50000000,
+        "rates": 9.0,
+        "developer": [
+          {
+            "id": 4,
+            "name": "Naughty Dog"
+          }
+        ],
+        "genders": [
+          {
+            "id": 4,
+            "name": "FPS (tir à la première personne)"
+          },
+          {
+            "id": 6,
+            "name": "Sport"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 4,
+            "name": "PC"
+          },
+          {
+            "id": 5,
+            "name": "PlayStation 4"
+          },
+          {
+            "id": 9,
+            "name": "Android"
+          }
+        ]
       }
     ]
   },
@@ -155,7 +190,46 @@
     "acronym": "EDB",
     "games": [
       {
-        "id": 5
+        "id": 5,
+        "name": "Minecraft",
+        "price": 19.99,
+        "release_date": "2011-11-18",
+        "sell_nb": 200000000,
+        "rates": 9.2,
+        "developer": [
+          {
+            "id": 5,
+            "name": "Nintendo"
+          }
+        ],
+        "genders": [
+          {
+            "id": 1,
+            "name": "Action"
+          },
+          {
+            "id": 3,
+            "name": "RPG (jeu de rôle)"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 4,
+            "name": "PC"
+          },
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          },
+          {
+            "id": 8,
+            "name": "iOS"
+          },
+          {
+            "id": 9,
+            "name": "Android"
+          }
+        ]
       }
     ]
   },
@@ -166,7 +240,46 @@
     "acronym": "EDR",
     "games": [
       {
-        "id": 6
+        "id": 6,
+        "name": "FIFA 22",
+        "price": 59.99,
+        "release_date": "2021-10-01",
+        "sell_nb": 5000000,
+        "rates": 8.5,
+        "developer": [
+          {
+            "id": 6,
+            "name": "Square Enix"
+          }
+        ],
+        "genders": [
+          {
+            "id": 7,
+            "name": "Course"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 1,
+            "name": "PlayStation 5"
+          },
+          {
+            "id": 5,
+            "name": "PlayStation 4"
+          },
+          {
+            "id": 6,
+            "name": "Xbox One"
+          },
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          },
+          {
+            "id": 9,
+            "name": "Android"
+          }
+        ]
       }
     ]
   },
@@ -177,7 +290,34 @@
     "acronym": "EDL",
     "games": [
       {
-        "id": 7
+        "id": 7,
+        "name": "Assassin's Creed Valhalla",
+        "price": 49.99,
+        "release_date": "2020-11-10",
+        "sell_nb": 8000000,
+        "rates": 8.8,
+        "developer": [
+          {
+            "id": 7,
+            "name": "Activision Blizzard"
+          }
+        ],
+        "genders": [
+          {
+            "id": 1,
+            "name": "Action"
+          },
+          {
+            "id": 2,
+            "name": "Aventure"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 10,
+            "name": "Mac"
+          }
+        ]
       }
     ]
   },
@@ -188,7 +328,42 @@
     "acronym": "EDM",
     "games": [
       {
-        "id": 8
+        "id": 8,
+        "name": "Super Mario Odyssey",
+        "price": 59.99,
+        "release_date": "2017-10-27",
+        "sell_nb": 18000000,
+        "rates": 9.6,
+        "developer": [
+          {
+            "id": 8,
+            "name": "CD Projekt Red"
+          }
+        ],
+        "genders": [
+          {
+            "id": 5,
+            "name": "Stratégie"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 1,
+            "name": "PlayStation 5"
+          },
+          {
+            "id": 8,
+            "name": "iOS"
+          },
+          {
+            "id": 10,
+            "name": "Mac"
+          }
+        ]
       }
     ]
   },
@@ -199,7 +374,38 @@
     "acronym": "EDS",
     "games": [
       {
-        "id": 9
+        "id": 9,
+        "name": "Call of Duty: Modern Warfare",
+        "price": 59.99,
+        "release_date": "2019-10-25",
+        "sell_nb": 30000000,
+        "rates": 8.9,
+        "developer": [
+          {
+            "id": 9,
+            "name": "Epic Games"
+          }
+        ],
+        "genders": [
+          {
+            "id": 6,
+            "name": "Sport"
+          },
+          {
+            "id": 7,
+            "name": "Course"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 4,
+            "name": "PC"
+          },
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
       }
     ]
   },
@@ -210,7 +416,38 @@
     "acronym": "EDG",
     "games": [
       {
-        "id": 10
+        "id": 10,
+        "name": "Red Dead Redemption 2",
+        "price": 59.99,
+        "release_date": "2018-10-26",
+        "sell_nb": 35000000,
+        "rates": 9.8,
+        "developer": [
+          {
+            "id": 10,
+            "name": "Bethesda Game Studios"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
       }
     ]
   }
