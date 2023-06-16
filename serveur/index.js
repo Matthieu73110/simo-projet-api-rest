@@ -1,24 +1,31 @@
 'use strict';
 
-var path = require('path');
-var http = require('http');
+//effectué un npm install cors dans le dossier serveur
 
-var oas3Tools = require('oas3-tools');
-var serverPort = 8080;
+const cors = require('cors');
+const express = require('express');
+const path = require('path');
+const http = require('http');
+const oas3Tools = require('oas3-tools');
+
+const app = express();
+
+// Autoriser toutes les requêtes CORS
+app.use(cors());
 
 // swaggerRouter configuration
-var options = {
-    routing: {
-        controllers: path.join(__dirname, './controllers')
-    },
+const options = {
+  routing: {
+    controllers: path.join(__dirname, './controllers')
+  },
 };
 
-var expressAppConfig = oas3Tools.expressAppConfig(path.join(__dirname, 'api/openapi.yaml'), options);
-var app = expressAppConfig.getApp();
+const expressAppConfig = oas3Tools.expressAppConfig(path.join(__dirname, 'api/openapi.yaml'), options);
+const expressApp = expressAppConfig.getApp();
+app.use(expressApp);
 
 // Initialize the Swagger middleware
-http.createServer(app).listen(serverPort, function () {
-    console.log('Your server is listening on port %d (http://localhost:%d)', serverPort, serverPort);
-    console.log('Swagger-ui is available on http://localhost:%d/docs', serverPort);
+http.createServer(app).listen(8080, function () {
+  console.log('Votre serveur écoute sur le port %d (http://localhost:%d)', 8080, 8080);
+  console.log('Swagger-ui est disponible sur http://localhost:%d/docs', 8080);
 });
-
