@@ -1,5 +1,6 @@
 'use strict';
 
+const data = require("../data/platforms.json");
 
 /**
  * List all supported platforms
@@ -9,7 +10,7 @@
  **/
 exports.platformsGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve(require("../data/platforms.json"));
+    resolve(data);
   });
 }
 
@@ -35,7 +36,7 @@ exports.platformsId_platformDELETE = function(id_platform) {
  **/
 exports.platformsId_platformGET = function(id_platform) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_platform-1]);
   });
 }
 
@@ -48,7 +49,7 @@ exports.platformsId_platformGET = function(id_platform) {
  **/
 exports.platformsId_platformGamesGET = function(id_platform) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_platform-1].games);
   });
 }
 
