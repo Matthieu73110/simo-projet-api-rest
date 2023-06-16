@@ -1,7 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Electronic Arts"
+    "name": "Electronic Arts",
+    "games" : [
+      {
+        "id": 1
+      }
+    ]
   },
   {
     "id": 2,

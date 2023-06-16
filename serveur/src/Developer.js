@@ -7,7 +7,7 @@ class Developer {
         this.games = [];
     }
 
-    addGame(game) {
+    addGames(game) {
         this.games.push(game);
     }
 

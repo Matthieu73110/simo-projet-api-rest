@@ -3,7 +3,12 @@
     "id": 1,
     "name": "Éditions Dupont",
     "address": "123 Rue Principale, Paris",
-    "acronym": "EDD"
+    "acronym": "EDD",
+    "games": [
+      {
+        "id": 1
+      }
+    ]
   },
   {
     "id": 2,

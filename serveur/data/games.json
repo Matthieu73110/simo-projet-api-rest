@@ -5,7 +5,37 @@
     "price": 49.99,
     "release_date": "2015-05-19",
     "sell_nb": 10000000,
-    "rates": 9.5
+    "rates": 9.5,
+    "developer": [
+      {
+          "id": 1
+      }
+    ],
+    "editor": [
+      {
+          "id": 1
+      }
+    ],
+    "genders": [
+      {
+          "id": 1
+      },
+
+      {
+          "id": 5
+      }
+    ],
+    "platforms": [
+      {
+          "id": 1
+      },
+      {
+          "id": 5
+      },
+      {
+          "id": 6
+      }
+    ]
   },
   {
     "id": 2,
@@ -13,7 +43,37 @@
     "price": 59.99,
     "release_date": "2013-09-17",
     "sell_nb": 110000000,
-    "rates": 9.0
+    "rates": 9.0,
+    "developer": [
+      {
+          "id": 2
+      }
+    ],
+    "editor": [
+      {
+          "id": 2
+      }
+    ],
+    "genders": [
+      {
+          "id": 2
+      },
+
+      {
+          "id": 7
+      }
+    ],
+    "platforms": [
+      {
+          "id": 2
+      },
+      {
+          "id": 3
+      },
+      {
+          "id": 4
+      }
+    ]
   },
   {
     "id": 3,
@@ -21,7 +81,37 @@
     "price": 59.99,
     "release_date": "2017-03-03",
     "sell_nb": 20000000,
-    "rates": 9.7
+    "rates": 9.7,
+    "developer": [
+      {
+          "id": 3
+      }
+    ],
+    "editor": [
+      {
+          "id": 3
+      }
+    ],
+    "genders": [
+      {
+          "id": 3
+      },
+
+      {
+          "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 7
+      },
+      {
+          "id": 8
+      },
+      {
+          "id": 10
+      }
+    ]
   },
   {
     "id": 4,
@@ -29,7 +119,37 @@
     "price": 39.99,
     "release_date": "2016-05-24",
     "sell_nb": 50000000,
-    "rates": 9.0
+    "rates": 9.0,
+    "developer": [
+      {
+          "id": 4
+      }
+    ],
+    "editor": [
+      {
+          "id": 4
+      }
+    ],
+    "genders": [
+      {
+          "id": 4
+      },
+
+      {
+          "id": 6
+      }
+    ],
+    "platforms": [
+      {
+          "id": 4
+      },
+      {
+          "id": 5
+      },
+      {
+          "id": 9
+      }
+    ]
   },
   {
     "id": 5,
@@ -37,7 +157,40 @@
     "price": 19.99,
     "release_date": "2011-11-18",
     "sell_nb": 200000000,
-    "rates": 9.2
+    "rates": 9.2,
+    "developer": [
+      {
+          "id": 5
+      }
+    ],
+    "editor": [
+      {
+          "id": 5
+      }
+    ],
+    "genders": [
+      {
+          "id": 1
+      },
+
+      {
+          "id": 3
+      }
+    ],
+    "platforms": [
+      {
+          "id": 4
+      },
+      {
+          "id": 7
+      },
+      {
+          "id": 8
+      },
+      {
+        "id": 9
+      }
+    ]
   },
   {
     "id": 6,
@@ -45,7 +198,39 @@
     "price": 59.99,
     "release_date": "2021-10-01",
     "sell_nb": 5000000,
-    "rates": 8.5
+    "rates": 8.5,
+    "developer": [
+      {
+          "id": 6
+      }
+    ],
+    "editor": [
+      {
+          "id": 6
+      }
+    ],
+    "genders": [
+      {
+          "id": 7
+      }
+    ],
+    "platforms": [
+      {
+          "id": 1
+      },
+      {
+          "id": 5
+      },
+      {
+          "id": 6
+      },
+      {
+        "id": 7
+      },
+      {
+        "id": 9
+      }
+    ]
   },
   {
     "id": 7,
@@ -53,7 +238,31 @@
     "price": 49.99,
     "release_date": "2020-11-10",
     "sell_nb": 8000000,
-    "rates": 8.8
+    "rates": 8.8,
+    "developer": [
+      {
+          "id": 7
+      }
+    ],
+    "editor": [
+      {
+          "id": 7
+      }
+    ],
+    "genders": [
+      {
+          "id": 1
+      },
+
+      {
+          "id": 2
+      }
+    ],
+    "platforms": [
+      {
+          "id": 10
+      }
+    ]
   },
   {
     "id": 8,
@@ -61,7 +270,37 @@
     "price": 59.99,
     "release_date": "2017-10-27",
     "sell_nb": 18000000,
-    "rates": 9.6
+    "rates": 9.6,
+    "developer": [
+      {
+          "id": 8
+      }
+    ],
+    "editor": [
+      {
+          "id": 8
+      }
+    ],
+    "genders": [
+      {
+          "id": 5
+      },
+
+      {
+          "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 1
+      },
+      {
+          "id": 8
+      },
+      {
+          "id": 10
+      }
+    ]
   },
   {
     "id": 9,
@@ -69,7 +308,34 @@
     "price": 59.99,
     "release_date": "2019-10-25",
     "sell_nb": 30000000,
-    "rates": 8.9
+    "rates": 8.9,
+    "developer": [
+      {
+          "id": 9
+      }
+    ],
+    "editor": [
+      {
+          "id": 9
+      }
+    ],
+    "genders": [
+      {
+          "id": 6
+      },
+
+      {
+          "id": 7
+      }
+    ],
+    "platforms": [
+      {
+          "id": 4
+      },
+      {
+          "id": 7
+      }
+    ]
   },
   {
     "id": 10,
@@ -77,7 +343,27 @@
     "price": 59.99,
     "release_date": "2018-10-26",
     "sell_nb": 35000000,
-    "rates": 9.8
+    "rates": 9.8,
+    "developer": [
+      {
+          "id": 10
+      }
+    ],
+    "editor": [
+      {
+          "id": 10
+      }
+    ],
+    "genders": [
+      {
+          "id": 10
+      }
+    ],
+    "platforms": [
+      {
+          "id": 4
+      }
+    ]
   }
 ]
 
