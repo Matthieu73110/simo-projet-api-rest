@@ -1,5 +1,6 @@
 'use strict';
 
+const data = require("../data/developers.json")
 
 /**
  * List all developers
@@ -9,7 +10,7 @@
  **/
 exports.developersGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve(require("../data/developers.json"));
+    resolve(data);
   });
 }
 
@@ -28,14 +29,14 @@ exports.developersId_developerDELETE = function(id_developer) {
 
 
 /**
- * Get one editor
+ * Get one developer
  *
  * id_developer Integer a developer if found
  * no response value expected for this operation
  **/
 exports.developersId_developerGET = function(id_developer) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_developer-1]);
   });
 }
 
@@ -48,7 +49,7 @@ exports.developersId_developerGET = function(id_developer) {
  **/
 exports.developersId_developerGamesGET = function(id_developer) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_developer-1].games);
   });
 }
 

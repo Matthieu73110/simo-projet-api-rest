@@ -1,5 +1,6 @@
 'use strict';
 
+const data = require("../data/genders.json")
 
 /**
  * List all genders
@@ -9,7 +10,7 @@
  **/
 exports.gendersGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve(require("../data/genders.json"));
+    resolve(data);
   });
 }
 
@@ -35,7 +36,7 @@ exports.gendersId_genderDELETE = function(id_gender) {
  **/
 exports.gendersId_genderGET = function(id_gender) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_gender-1]);
   });
 }
 
@@ -48,7 +49,7 @@ exports.gendersId_genderGET = function(id_gender) {
  **/
 exports.gendersId_genderGamesGET = function(id_gender) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_editor-1].games);
   });
 }
 
