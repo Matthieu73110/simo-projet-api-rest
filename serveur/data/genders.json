@@ -692,6 +692,348 @@
             "name": "Nintendo 3DS"
           }
         ]
+      },
+      {
+        "id": 11,
+        "name": "Fallout 4",
+        "price": 29.99,
+        "release_date": "2015-11-10",
+        "sell_nb": 12000000,
+        "rates": 8.7,
+        "developer": [
+          {
+            "id": 1,
+            "name": "Electronic Arts"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "The Elder Scrolls V: Skyrim",
+        "price": 39.99,
+        "release_date": "2011-11-11",
+        "sell_nb": 30000000,
+        "rates": 9.3,
+        "developer": [
+          {
+            "id": 3,
+            "name": "Rockstar Games"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Uncharted 4: A Thief's End",
+        "price": 59.99,
+        "release_date": "2016-05-10",
+        "sell_nb": 15000000,
+        "rates": 9.7,
+        "developer": [
+          {
+            "id": 9,
+            "name": "Epic Games"
+          }
+        ],
+        "editor": [
+          {
+            "id": 5,
+            "name": "Éditions Dubois",
+            "address": "111 Rue de la Liberté, Bordeaux",
+            "acronym": "EDB"
+          }
+        ],
+        "genders": [
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "The Last of Us Part II",
+        "price": 59.99,
+        "release_date": "2020-06-19",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 4,
+            "name": "Naughty Dog"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Horizon Zero Dawn",
+        "price": 49.99,
+        "release_date": "2017-02-28",
+        "sell_nb": 10000000,
+        "rates": 9.3,
+        "developer": [
+          {
+            "id": 7,
+            "name": "Activision Blizzard"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Metal Gear Solid V: The Phantom Pain",
+        "price": 19.99,
+        "release_date": "2015-09-01",
+        "sell_nb": 6000000,
+        "rates": 9.0,
+        "developer": [
+          {
+            "id": 6,
+            "name": "Square Enix"
+          }
+        ],
+        "editor": [
+          {
+            "id": 4,
+            "name": "Éditions Leroy",
+            "address": "1010 Rue Principale, Marseille",
+            "acronym": "EDL"
+          }
+        ],
+        "genders": [
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Bloodborne",
+        "price": 19.99,
+        "release_date": "2015-03-24",
+        "sell_nb": 3000000,
+        "rates": 9.4,
+        "developer": [
+          {
+            "id": 2,
+            "name": "Ubisoft"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Dark Souls III",
+        "price": 59.99,
+        "release_date": "2016-03-24",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 8,
+            "name": "CD Projekt Red"
+          }
+        ],
+        "editor": [
+          {
+            "id": 3,
+            "name": "Éditions Tremblay",
+            "address": "789 Boulevard du Nord, Montréal",
+            "acronym": "EDT"
+          }
+        ],
+        "genders": [
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Resident Evil 2 Remake",
+        "price": 39.99,
+        "release_date": "2019-01-25",
+        "sell_nb": 8000000,
+        "rates": 9,
+        "developer": [
+          {
+            "id": 4,
+            "name": "Naughty Dog"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 9,
+            "name": "Puzzle"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
       }
     ]
   },
@@ -718,6 +1060,348 @@
             "name": "Éditions Gagnon",
             "address": "666 Avenue du Ruisseau, Montréal",
             "acronym": "EDG"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Fallout 4",
+        "price": 29.99,
+        "release_date": "2015-11-10",
+        "sell_nb": 12000000,
+        "rates": 8.7,
+        "developer": [
+          {
+            "id": 1,
+            "name": "Electronic Arts"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "The Elder Scrolls V: Skyrim",
+        "price": 39.99,
+        "release_date": "2011-11-11",
+        "sell_nb": 30000000,
+        "rates": 9.3,
+        "developer": [
+          {
+            "id": 3,
+            "name": "Rockstar Games"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Uncharted 4: A Thief's End",
+        "price": 59.99,
+        "release_date": "2016-05-10",
+        "sell_nb": 15000000,
+        "rates": 9.7,
+        "developer": [
+          {
+            "id": 9,
+            "name": "Epic Games"
+          }
+        ],
+        "editor": [
+          {
+            "id": 5,
+            "name": "Éditions Dubois",
+            "address": "111 Rue de la Liberté, Bordeaux",
+            "acronym": "EDB"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "The Last of Us Part II",
+        "price": 59.99,
+        "release_date": "2020-06-19",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 4,
+            "name": "Naughty Dog"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Horizon Zero Dawn",
+        "price": 49.99,
+        "release_date": "2017-02-28",
+        "sell_nb": 10000000,
+        "rates": 9.3,
+        "developer": [
+          {
+            "id": 7,
+            "name": "Activision Blizzard"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Metal Gear Solid V: The Phantom Pain",
+        "price": 19.99,
+        "release_date": "2015-09-01",
+        "sell_nb": 6000000,
+        "rates": 9.0,
+        "developer": [
+          {
+            "id": 6,
+            "name": "Square Enix"
+          }
+        ],
+        "editor": [
+          {
+            "id": 4,
+            "name": "Éditions Leroy",
+            "address": "1010 Rue Principale, Marseille",
+            "acronym": "EDL"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Bloodborne",
+        "price": 19.99,
+        "release_date": "2015-03-24",
+        "sell_nb": 3000000,
+        "rates": 9.4,
+        "developer": [
+          {
+            "id": 2,
+            "name": "Ubisoft"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Dark Souls III",
+        "price": 59.99,
+        "release_date": "2016-03-24",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 8,
+            "name": "CD Projekt Red"
+          }
+        ],
+        "editor": [
+          {
+            "id": 3,
+            "name": "Éditions Tremblay",
+            "address": "789 Boulevard du Nord, Montréal",
+            "acronym": "EDT"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 10,
+            "name": "Horreur"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Resident Evil 2 Remake",
+        "price": 39.99,
+        "release_date": "2019-01-25",
+        "sell_nb": 8000000,
+        "rates": 9,
+        "developer": [
+          {
+            "id": 4,
+            "name": "Naughty Dog"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
           }
         ],
         "genders": [
@@ -846,6 +1530,348 @@
             "name": "Éditions Gagnon",
             "address": "666 Avenue du Ruisseau, Montréal",
             "acronym": "EDG"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Fallout 4",
+        "price": 29.99,
+        "release_date": "2015-11-10",
+        "sell_nb": 12000000,
+        "rates": 8.7,
+        "developer": [
+          {
+            "id": 1,
+            "name": "Electronic Arts"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "The Elder Scrolls V: Skyrim",
+        "price": 39.99,
+        "release_date": "2011-11-11",
+        "sell_nb": 30000000,
+        "rates": 9.3,
+        "developer": [
+          {
+            "id": 3,
+            "name": "Rockstar Games"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Uncharted 4: A Thief's End",
+        "price": 59.99,
+        "release_date": "2016-05-10",
+        "sell_nb": 15000000,
+        "rates": 9.7,
+        "developer": [
+          {
+            "id": 9,
+            "name": "Epic Games"
+          }
+        ],
+        "editor": [
+          {
+            "id": 5,
+            "name": "Éditions Dubois",
+            "address": "111 Rue de la Liberté, Bordeaux",
+            "acronym": "EDB"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "The Last of Us Part II",
+        "price": 59.99,
+        "release_date": "2020-06-19",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 4,
+            "name": "Naughty Dog"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Horizon Zero Dawn",
+        "price": 49.99,
+        "release_date": "2017-02-28",
+        "sell_nb": 10000000,
+        "rates": 9.3,
+        "developer": [
+          {
+            "id": 7,
+            "name": "Activision Blizzard"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Metal Gear Solid V: The Phantom Pain",
+        "price": 19.99,
+        "release_date": "2015-09-01",
+        "sell_nb": 6000000,
+        "rates": 9.0,
+        "developer": [
+          {
+            "id": 6,
+            "name": "Square Enix"
+          }
+        ],
+        "editor": [
+          {
+            "id": 4,
+            "name": "Éditions Leroy",
+            "address": "1010 Rue Principale, Marseille",
+            "acronym": "EDL"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Bloodborne",
+        "price": 19.99,
+        "release_date": "2015-03-24",
+        "sell_nb": 3000000,
+        "rates": 9.4,
+        "developer": [
+          {
+            "id": 2,
+            "name": "Ubisoft"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Dark Souls III",
+        "price": 59.99,
+        "release_date": "2016-03-24",
+        "sell_nb": 10000000,
+        "rates": 9.5,
+        "developer": [
+          {
+            "id": 8,
+            "name": "CD Projekt Red"
+          }
+        ],
+        "editor": [
+          {
+            "id": 3,
+            "name": "Éditions Tremblay",
+            "address": "789 Boulevard du Nord, Montréal",
+            "acronym": "EDT"
+          }
+        ],
+        "genders": [
+          {
+            "id": 8,
+            "name": "Simulation"
+          },
+          {
+            "id": 9,
+            "name": "Puzzle"
+          }
+        ],
+        "platforms": [
+          {
+            "id": 7,
+            "name": "Nintendo 3DS"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Resident Evil 2 Remake",
+        "price": 39.99,
+        "release_date": "2019-01-25",
+        "sell_nb": 8000000,
+        "rates": 9,
+        "developer": [
+          {
+            "id": 4,
+            "name": "Naughty Dog"
+          }
+        ],
+        "editor": [
+          {
+            "id": 2,
+            "name": "Éditions Martin",
+            "address": "456 Avenue des Roses, Lyon",
+            "acronym": "EDM"
           }
         ],
         "genders": [
