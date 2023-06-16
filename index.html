@@ -1,85 +1,179 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Recherche d'informations dans l'API</title>
-  <style>
-    /* Style CSS pour rendre l'interface agréable */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
+    <title>Recherche d'informations dans l'API</title>
+    <style>
+        /* Styles CSS pour rendre l'interface agréable */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+        }
     
-    label {
-      font-weight: bold;
-    }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
     
-    input[type="text"] {
-      margin-bottom: 10px;
-      padding: 5px;
-      width: 200px;
-    }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
     
-    button {
-      padding: 10px;
-    }
-  </style>
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+        }
+    
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        .result {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        .result div {
+            margin-bottom: 10px;
+        }
+    
+        .result label {
+            font-weight: normal;
+            display: inline-block;
+            width: 80px;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Recherche d'informations dans l'API</h1>
-  
-  <label for="dataSelection">Sélectionnez le type de données :</label>
-  <select id="dataSelection">
-    <option value="editors">Editeur</option>
-    <option value="products">Produits</option>
-    <!-- Ajoutez d'autres options en fonction de vos données -->
-  </select>
-  
-  <br>
-  
-  <label for="searchInput">Entrez le nom :</label>
-  <input type="text" id="searchInput">
-  
-  <br>
-  
-  <button onclick="searchData()">Rechercher</button>
-  
-  <div id="result"></div>
-  
-  <script>
-    function searchData() {
-        var dataSelection = document.getElementById('dataSelection').value;
-        var searchInput = document.getElementById('searchInput').value;
+    <h1>Recherche d'informations dans l'API</h1>
+    
+    <div class="search-form">
+        <label for="dataSelection">Sélectionnez le type de données :</label>
+        <select id="dataSelection">
+            <option value="editors">Éditeurs</option>
+            <option value="developers">Développeurs</option>
+            <!-- Ajoutez d'autres options en fonction de vos données -->
+        </select>
+
+        <br />
+
+        <label for="searchInput">Entrez un ID :</label>
+        <input type="text" id="searchInput" />
+
+        <br />
         
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'http://localhost:8080/' + dataSelection);
+        <button onclick="searchData()">Rechercher</button>
+    </div>
+    
+    <div id="result" class="result"></div>
+    
+    <script>
+        function searchData() {
+            var dataSelection = document.getElementById("dataSelection").value;
+            var searchInput = document.getElementById("searchInput").value;
+            
+            // Vérification si l'entrée est un nombre
+            if (isNaN(searchInput)) {
+                alert("Veuillez entrer un nombre valide.");
+                return;
+            }
 
-        xhr.onload = function() {
-            if (xhr.status === 200) {
-                var data = JSON.parse(xhr.responseText);
-                var result = document.getElementById('result');
-                result.innerHTML = '';
-                
-                if (data.length > 0) {
-                    for (var i = 0; i < data.length; i++) {
-                        var item = data[i];
-                        var itemDiv = document.createElement('div');
-                        itemDiv.innerHTML = item.name;
+            var xhr = new XMLHttpRequest();
+
+            // Si un ID est entré
+            if (searchInput.length > 0) {
+                xhr.open("GET", "http://localhost:8080/" + dataSelection + '/' + searchInput);
+
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        var data = JSON.parse(xhr.responseText);
+                        var result = document.getElementById("result");
+                        result.innerHTML = "";
+
+                        var itemDiv = document.createElement("div");
+                        itemDiv.innerHTML = "<label>ID:</label> " + data.id + "<br>"
+                            + "<label>Name:</label> " + data.name + "<br>";
+
+                        if (data.hasOwnProperty("address")) {
+                            itemDiv.innerHTML += "<label>Address:</label> " + data.address + "<br>";
+                        }
+
+                        if (data.hasOwnProperty("acronym")) {
+                            itemDiv.innerHTML += "<label>Acronym:</label> " + data.acronym + "<br>";
+                        }
+
+                        if (data.games.length > 0) {
+                            itemDiv.innerHTML += "<label>Games:</label> ";
+                            for (var j = 0; j < data.games.length; j++) {
+                                itemDiv.innerHTML += data.games[j].id + " ";
+                            }
+                            itemDiv.innerHTML += "<br>";
+                        }
+
                         result.appendChild(itemDiv);
+                    } else {
+                        alert("La requête a échoué. Statut : " + xhr.status);
                     }
-                } else {
-                    result.innerHTML = 'Aucun résultat';
-                }
+                };
+            } else {
+                xhr.open("GET", "http://localhost:8080/" + dataSelection);
+
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        var data = JSON.parse(xhr.responseText);
+                        var result = document.getElementById("result");
+                        result.innerHTML = "";
+
+                        if (Array.isArray(data) && data.length > 0) {
+                            for (var i = 0; i < data.length; i++) {
+                                var item = data[i];
+                                var itemDiv = document.createElement("div");
+                                itemDiv.innerHTML = "<label>ID:</label> " + item.id + "<br>"
+                                    + "<label>Name:</label> " + item.name + "<br>";
+
+                                if (item.hasOwnProperty("address")) {
+                                    itemDiv.innerHTML += "<label>Address:</label> " + item.address + "<br>";
+                                }
+
+                                if (item.hasOwnProperty("acronym")) {
+                                    itemDiv.innerHTML += "<label>Acronym:</label> " + item.acronym + "<br>";
+                                }
+
+                                if (item.games.length > 0) {
+                                    itemDiv.innerHTML += "<label>Games:</label> ";
+                                    for (var j = 0; j < item.games.length; j++) {
+                                        itemDiv.innerHTML += item.games[j].id + " ";
+                                    }
+                                    itemDiv.innerHTML += "<br>";
+                                }
+
+                                result.appendChild(itemDiv);
+                            }
+                        } else {
+                            result.innerHTML = "Aucun résultat";
+                        }
+                    } else {
+                        alert("La requête a échoué. Statut : " + xhr.status);
+                    }
+                };
             }
-            else {
-                alert('Request failed.  Returned status of ' + xhr.status);
-            }
-        };
 
-        xhr.send();
-    }
-
-
-
-  </script>
+            xhr.send();
+        }
+    </script>
 </body>
 </html>
