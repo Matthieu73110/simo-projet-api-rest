@@ -1,5 +1,6 @@
 'use strict';
 
+const data = require("../data/games.json");
 
 /**
  * List all games
@@ -9,7 +10,7 @@
  **/
 exports.gamesGET = function(page) {
   return new Promise(function(resolve, reject) {
-    resolve(require("../data/games.json"));
+    resolve(data);
   });
 }
 
@@ -28,14 +29,14 @@ exports.gamesId_gameDELETE = function(id_game) {
 
 
 /**
- * Get one editor
+ * Get one game
  *
  * id_game Integer a game if found
  * no response value expected for this operation
  **/
 exports.gamesId_gameGET = function(id_game) {
   return new Promise(function(resolve, reject) {
-    resolve();
+    resolve(data[id_game-1]);
   });
 }
 
