@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recherche d'informations dans l'API</title>
+  <style>
+    /* Style CSS pour rendre l'interface agréable */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"] {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 200px;
+    }
+    
+    button {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Recherche d'informations dans l'API</h1>
+  
+  <label for="dataSelection">Sélectionnez le type de données :</label>
+  <select id="dataSelection">
+    <option value="users">Utilisateurs</option>
+    <option value="products">Produits</option>
+    <!-- Ajoutez d'autres options en fonction de vos données -->
+  </select>
+  
+  <br>
+  
+  <label for="searchInput">Entrez le nom :</label>
+  <input type="text" id="searchInput">
+  
+  <br>
+  
+  <button onclick="searchData()">Rechercher</button>
+  
+  <div id="result"></div>
+  
+  <script>
+    function searchData() {
+      var dataSelection = document.getElementById('dataSelection').value;
+      var searchInput = document.getElementById('searchInput').value;
+      
+      // Effectuez une requête AJAX à votre API REST en utilisant les valeurs sélectionnées et saisies par l'utilisateur
+      
+      // Exemple de requête AJAX avec Fetch API
+      fetch('/api/' + dataSelection + '?name=' + searchInput)
+        .then(response => response.json())
+        .then(data => {
+          // Traitez les données de réponse ici
+          // Vous pouvez les afficher dans la div avec l'id "result" ou faire toute autre opération souhaitée
+          document.getElementById('result').innerHTML = JSON.stringify(data);
+        })
+        .catch(error => {
+          // Gérez les erreurs de requête ici
+          console.error('Erreur de requête:', error);
+        });
+    }
+  </script>
+</body>
+</html>
