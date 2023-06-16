@@ -29,7 +29,7 @@
   
   <label for="dataSelection">Sélectionnez le type de données :</label>
   <select id="dataSelection">
-    <option value="users">Utilisateurs</option>
+    <option value="editors">Editeur</option>
     <option value="products">Produits</option>
     <!-- Ajoutez d'autres options en fonction de vos données -->
   </select>
@@ -47,24 +47,39 @@
   
   <script>
     function searchData() {
-      var dataSelection = document.getElementById('dataSelection').value;
-      var searchInput = document.getElementById('searchInput').value;
-      
-      // Effectuez une requête AJAX à votre API REST en utilisant les valeurs sélectionnées et saisies par l'utilisateur
-      
-      // Exemple de requête AJAX avec Fetch API
-      fetch('/api/' + dataSelection + '?name=' + searchInput)
-        .then(response => response.json())
-        .then(data => {
-          // Traitez les données de réponse ici
-          // Vous pouvez les afficher dans la div avec l'id "result" ou faire toute autre opération souhaitée
-          document.getElementById('result').innerHTML = JSON.stringify(data);
-        })
-        .catch(error => {
-          // Gérez les erreurs de requête ici
-          console.error('Erreur de requête:', error);
-        });
+        var dataSelection = document.getElementById('dataSelection').value;
+        var searchInput = document.getElementById('searchInput').value;
+        
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:8080/' + dataSelection);
+
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                var data = JSON.parse(xhr.responseText);
+                var result = document.getElementById('result');
+                result.innerHTML = '';
+                
+                if (data.length > 0) {
+                    for (var i = 0; i < data.length; i++) {
+                        var item = data[i];
+                        var itemDiv = document.createElement('div');
+                        itemDiv.innerHTML = item.name;
+                        result.appendChild(itemDiv);
+                    }
+                } else {
+                    result.innerHTML = 'Aucun résultat';
+                }
+            }
+            else {
+                alert('Request failed.  Returned status of ' + xhr.status);
+            }
+        };
+
+        xhr.send();
     }
+
+
+
   </script>
 </body>
 </html>
