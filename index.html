@@ -111,6 +111,14 @@
                         itemDiv.innerHTML = "<label>ID:</label> " + data.id + "<br>"
                             + "<label>Name:</label> " + data.name + "<br>";
 
+                        if (data.hasOwnProperty("address")) {
+                            itemDiv.innerHTML += "<label>Adress:</label> " + data.address + "<br>";
+                        }
+
+                        if (data.hasOwnProperty("acronym")) {
+                            itemDiv.innerHTML += "<label>Acronym:</label> " + data.acronym + "<br>";
+                        }
+
                         if (data.hasOwnProperty("price")) {
                             itemDiv.innerHTML += "<label>Price:</label> " + data.price + "<br>";
                         }
