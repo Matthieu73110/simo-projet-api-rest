@@ -66,6 +66,9 @@
         <select id="dataSelection">
             <option value="editors">Éditeurs</option>
             <option value="developers">Développeurs</option>
+            <option value="games">Jeux</option>
+            <option value="platforms">Plateformes</option>
+            <option value="genders">Genres</option>
             <!-- Ajoutez d'autres options en fonction de vos données -->
         </select>
 
@@ -108,20 +111,20 @@
                         itemDiv.innerHTML = "<label>ID:</label> " + data.id + "<br>"
                             + "<label>Name:</label> " + data.name + "<br>";
 
-                        if (data.hasOwnProperty("address")) {
-                            itemDiv.innerHTML += "<label>Address:</label> " + data.address + "<br>";
+                        if (data.hasOwnProperty("price")) {
+                            itemDiv.innerHTML += "<label>Price:</label> " + data.price + "<br>";
                         }
 
-                        if (data.hasOwnProperty("acronym")) {
-                            itemDiv.innerHTML += "<label>Acronym:</label> " + data.acronym + "<br>";
+                        if (data.hasOwnProperty("release_date")) {
+                            itemDiv.innerHTML += "<label>Release Date:</label> " + data.release_date + "<br>";
                         }
 
-                        if (data.games.length > 0) {
-                            itemDiv.innerHTML += "<label>Games:</label> ";
-                            for (var j = 0; j < data.games.length; j++) {
-                                itemDiv.innerHTML += data.games[j].id + " ";
-                            }
-                            itemDiv.innerHTML += "<br>";
+                        if (data.hasOwnProperty("sell_nb")) {
+                            itemDiv.innerHTML += "<label>Sell Number:</label> " + data.sell_nb + "<br>";
+                        }
+
+                        if (data.hasOwnProperty("rates")) {
+                            itemDiv.innerHTML += "<label>Rates:</label> " + data.rates + "<br>";
                         }
 
                         result.appendChild(itemDiv);
@@ -146,19 +149,27 @@
                                     + "<label>Name:</label> " + item.name + "<br>";
 
                                 if (item.hasOwnProperty("address")) {
-                                    itemDiv.innerHTML += "<label>Address:</label> " + item.address + "<br>";
+                                    itemDiv.innerHTML += "<label>Adress:</label> " + item.address + "<br>";
                                 }
 
                                 if (item.hasOwnProperty("acronym")) {
                                     itemDiv.innerHTML += "<label>Acronym:</label> " + item.acronym + "<br>";
                                 }
 
-                                if (item.games.length > 0) {
-                                    itemDiv.innerHTML += "<label>Games:</label> ";
-                                    for (var j = 0; j < item.games.length; j++) {
-                                        itemDiv.innerHTML += item.games[j].id + " ";
-                                    }
-                                    itemDiv.innerHTML += "<br>";
+                                if (item.hasOwnProperty("price")) {
+                                    itemDiv.innerHTML += "<label>Price:</label> " + item.price + "<br>";
+                                }
+
+                                if (item.hasOwnProperty("release_date")) {
+                                    itemDiv.innerHTML += "<label>Release Date:</label> " + item.release_date + "<br>";
+                                }
+
+                                if (item.hasOwnProperty("sell_nb")) {
+                                    itemDiv.innerHTML += "<label>Sell Number:</label> " + item.sell_nb + "<br>";
+                                }
+
+                                if (item.hasOwnProperty("rates")) {
+                                    itemDiv.innerHTML += "<label>Rates:</label> " + item.rates + "<br>";
                                 }
 
                                 result.appendChild(itemDiv);
